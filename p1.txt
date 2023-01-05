@@ -2,6 +2,12 @@ https://www.101photoclub.com/
 https://myphotoclub.co.uk/
 https://photoclub247.com/
 
+post
+Each post must contain title,
+description, photo(s), and/or video.
+upload photos
+competitions
+
 
 competition - certificate, topic(food, pet, nature, citylife, candid)
 class - certificate
@@ -15,14 +21,6 @@ event calendar
 <!-- Write your comments here -->
 
 
-logo - up left (perfect click)
-motto - Every picture has a tale, Pictures keep your memories alive, A click of artistic joy.A flawless moment, A good snapshot stops a moment from running away,Capturing the beauty of your journey
 footer - social media, copyright, contact us, terms and conditions
 navigation bar - home - welcome, posts, about us, gallery, resources and links (class, workshop, video), contests, event calendar, join us
 
-
-“Emotions through photos.”
-“Change your lens, change your story.”
-“Capturing the pure essence of new life.”
-"Capture the beauty in simplicity."
-Capture life’s moments candidly
