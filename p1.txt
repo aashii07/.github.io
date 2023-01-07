@@ -18,9 +18,13 @@ gallery
 video - tips
 event calendar
 
-<!-- Write your comments here -->
+
+ Write your comments here -->
 
 
 footer - social media, copyright, contact us, terms and conditions
 navigation bar - home - welcome, posts, about us, gallery, resources and links (class, workshop, video), contests, event calendar, join us
 
+
+
+In fact, some sunsets are so mind-bogglingly beautiful that it can be hard to find words to describe them.
