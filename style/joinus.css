@@ -39,4 +39,44 @@ img
   color: rgb(130, 0, 110);
 }
 
+/* Style the list */
+ul.breadcrumb 
+{
+  padding: 10px 16px;
+  list-style: none;
+  background-color: rgb(0, 0, 0);
+}
 
+/* Display list items side by side */
+ul.breadcrumb li 
+{
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before 
+{
+  padding: 8px;
+  color: rgb(255, 255, 255);
+  content: "›";
+  font-size: 1.2em;
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a 
+{
+  color: rgb(130, 0, 110);
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover 
+{
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+.breadcrumblink
+{
+  color: rgb(100, 20, 125) !important;
+}

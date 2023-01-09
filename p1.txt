@@ -28,3 +28,12 @@ navigation bar - home - welcome, posts, about us, gallery, resources and links (
 
 
 In fact, some sunsets are so mind-bogglingly beautiful that it can be hard to find words to describe them.
+
+
+join us:
+submit form:
+a) Radio buttons
+b) Checkbox
+c) Input text
+d) Drop down menu
+e) Text area
