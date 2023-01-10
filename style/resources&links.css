@@ -80,3 +80,63 @@ ul.breadcrumb li a:hover
   color: rgb(100, 20, 125) !important;
 }
 
+.links
+{
+  height: 150px;
+  width: 100px;
+}
+
+a.links 
+{
+  color: rgb(130, 0, 110) !important;
+}
+
+.rl
+{
+  width:15%;
+  height:15%;
+  float: left;
+  margin-right:0 px 0 px -300px -300px;
+}
+
+h3
+{
+  font-size: 30px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+
+.flex-container 
+{
+  display: flex;
+  background-color: rgba(130, 0, 111, 0.35);
+}
+
+.flex-container > div 
+{
+  background-color: #000000;
+  margin: 2px;
+  width: 1000px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 80px;
+  padding-left: 50px;
+}
+
+p 
+{ 
+  color: rgb(0, 90, 130);
+}
+p a 
+{
+  color: inherit;
+}
+p a:visited
+{
+  color: rgb(100, 20, 125)
+}
+p a:hover
+{
+  color: rgba(0, 91, 130, 0.5);
+}
