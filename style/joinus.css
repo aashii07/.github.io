@@ -80,3 +80,325 @@ ul.breadcrumb li a:hover
 {
   color: rgb(100, 20, 125) !important;
 }
+
+/* Add padding to containers */
+.container 
+{
+  padding: 16px;
+  background-color: black;
+}
+
+
+h1
+{
+  color: rgb(255, 255, 255);
+}
+
+/* Full-width input fields */
+input[type=text]
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+
+}
+
+input[type=text]:focus 
+{
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Overwrite default styles of hr */
+hr 
+{
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn 
+{
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover 
+{
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a 
+{
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin 
+{
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+p 
+{ 
+  color: rgb(0, 90, 130);
+}
+p container
+{
+  color: inherit;
+}
+
+label 
+{
+	color: white;
+  font-size: 20px;
+  
+}
+
+#leftDiv
+{
+  padding:38px;
+  padding-right: 100px;
+  padding-left: 80px;
+  display:table-cell;
+  width:30%;
+}
+
+#rightDiv
+{
+  padding:38px;
+  padding-left: 100px;
+  padding-right: 100px;
+  display:table-cell;
+  width:30%;
+}
+
+#leftDiv2
+{
+  padding:38px;
+  padding-right: 100px;
+  padding-left: 80px;
+  padding-top: 1px;
+  display:table-cell;
+  width:40%;
+}
+
+#rightDiv2
+{
+  padding:38px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 1px;
+  display:table-cell;
+  width:25%;
+}
+
+#parentDiv3
+{
+  padding:38px;
+  padding-left: 80px;
+  padding-right: 100px;
+  padding-top: 1px;
+  padding-bottom: 25px;
+  display: table-cell;
+  width:10%;
+}
+
+p
+{
+  color:white;
+  padding-left: 80px;
+  font-size: 20px;
+  
+}
+#leftDiv4
+{
+  padding:38px;
+  padding-right: 50px;
+  padding-left: 80px;
+  padding-top: 1px;
+  display:table-cell;
+  width:40%;
+}
+#midDiv4
+{
+  padding:38px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 1px;
+  display:table-cell;
+  width:40%;
+  margin-left:5px;
+}
+#rightDiv4
+{
+  padding:38px;
+  padding-left: 50px;
+  padding-right: 1px;
+  padding-top: 1px;
+  display:table-cell;
+  width:40%;
+}
+select 
+{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline;
+  border: none;
+  background: #f1f1f1;
+}
+#d
+{
+  padding-right: 1px;
+  width: 90%;
+}
+#y
+{
+  width:80%;
+  padding-left: 1px;
+}
+.gender 
+{
+  display: inline-flex;
+  position: relative;
+  padding-left: 120px;
+  padding-right: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Hide the browser's default radio button */
+.gender input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-left: 85px;
+  
+}
+
+/* On mouse-over, add a grey background color */
+.gender:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.gender input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.gender input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.gender .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.CheckBox
+{
+  color:white;
+  padding-right: 35px;
+}
+
+.CheckBox {
+  display: block;
+  position: relative;
+  padding-left: 120px;
+  padding-right: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  
+}
+
+/* Hide the browser's default checkbox */
+.CheckBox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  margin-left: 85px;
+}
+
+/* On mouse-over, add a grey background color */
+.CheckBox:hover input ~ .check {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.CheckBox input:checked ~ .check {
+  background-color: #2195f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.Checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.CheckBox input:checked ~ .check:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.CheckBox input:checked ~ .check:after{
+  left: 9px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  content: "✔";
+}

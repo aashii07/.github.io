@@ -3,7 +3,8 @@ https://myphotoclub.co.uk/
 https://photoclub247.com/
 
 
-competitions
+pwd insta: ___perfect.click
+pwd fb: 123456789
 
 
 competition - certificate, topic(food, pet, nature, citylife, candid)
@@ -39,5 +40,21 @@ c) Input text
 d) Drop down menu
 e) Text area
 
-pwd insta: ___perfect.click
-pwd fb: 123456789
+
+full name c
+email c   phone number
+address c
+dob d
+gender a
+
+
+
+
+
+where did you hear about us b-
+
+query e
+
+terms b- Check box
+
+
