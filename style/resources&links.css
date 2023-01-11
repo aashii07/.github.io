@@ -5,26 +5,40 @@ img
   padding: 5px;
   width: 350px;
 }
-.topnav
-{
-  min-height: 50px;
-  height: 50px; 
-} 
+
 /* Add a background color to the top navigation */
 .topnav 
 {
+  /*position: fixed;*/
+  height: auto;
+  width: 100%;
   background: linear-gradient(to right, red, blue);
   overflow: auto;
+  white-space: nowrap;
+ 
 }
+/* width */
+.topnav::-webkit-scrollbar {
+  height: 15px;
+}
+/* Track */
+.topnav::-webkit-scrollbar-track {
+  background: #000000; 
+}
+/* Handle */
+.topnav::-webkit-scrollbar-thumb {
+  background: rgba(130, 0, 111, 0.35);; 
+}
+
 /* Style the links inside the navigation bar */
 .topnav a 
 {
-  float: left;
   color: #ddd;
   text-align: justify;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17.9px;
+  font-size: 17.6px;
+  display: inline-block;
 }
 /* Change the color of links on hover */
 .topnav a:hover 
@@ -93,10 +107,11 @@ a.links
 
 .rl
 {
-  width:15%;
-  height:15%;
+  width: 50px;;
+  height:auto;
   float: left;
   margin-right:0 px 0 px -300px -300px;
+  
 }
 
 h3
@@ -110,18 +125,29 @@ h3
 .flex-container 
 {
   display: flex;
-  background-color: rgba(130, 0, 111, 0.35);
+  background-color: rgba(130, 0, 110, 0.35);
 }
 
 .flex-container > div 
 {
   background-color: #000000;
   margin: 2px;
-  width: 1000px;
+  width: 100%;
   text-align: left;
   font-size: 20px;
-  line-height: 80px;
-  padding-left: 50px;
+  line-height: 70px;
+ 
+}
+@media (max-width: 1080px) {
+  .flex-container {
+    flex-direction: column;
+    background-color: #000000;
+  }
+  /*.flex-container > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }*/
 }
 
 p 

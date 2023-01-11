@@ -5,29 +5,43 @@ img
   padding: 5px;
   width: 350px;
 }
-.topnav
-{
-  /*min-height: 50px;*/
-  /*height: 50px;*/
-  /*position: fixed;*/
-  height: auto;
-  width: 100%;
-} 
 /* Add a background color to the top navigation */
 .topnav 
 {
+  /*position: fixed;*/
+  height: auto;
+  width: 100%;
   background: linear-gradient(to right, red, blue);
+  white-space: nowrap;
   overflow: auto;
+  
 }
+/* width */
+.topnav::-webkit-scrollbar {
+  height: 15px;
+}
+/* Track */
+.topnav::-webkit-scrollbar-track {
+  background: #000000; 
+}
+/* Handle */
+.topnav::-webkit-scrollbar-thumb {
+  background: rgba(130, 0, 110, 0.35);
+}
+/* Handle on hover */
+.topnav::-webkit-scrollbar-thumb:hover {
+  background: rgba(130, 0, 110, 0.25); 
+}
+
 /* Style the links inside the navigation bar */
 .topnav a 
 {
-  float: left;
+  display: inline-block;
   color: #ddd;
   text-align: justify;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17.9px;
+  font-size: 17.6px;
 }
 /* Change the color of links on hover */
 .topnav a:hover 
@@ -104,11 +118,16 @@ figcaption
 .flex-container > div 
 {
   background-color: #000000;
-  width: 1000px;
+  width: 100%;
   margin: 10px;
   text-align: center;
   font-size: 35px;
   line-height: 25px;
+}
+@media (max-width: 1200px) {
+  .flex-container {
+    flex-direction: column;
+  }
 }
 
 /* Style the list */
