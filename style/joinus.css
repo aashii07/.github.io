@@ -151,10 +151,6 @@ a
   text-align: center;
 }
 
-p 
-{ 
-  color: rgb(0, 90, 130);
-}
 p container
 {
   color: inherit;
@@ -166,6 +162,7 @@ label
   font-size: 20px;
   
 }
+
 
 #leftDiv
 {
@@ -221,6 +218,13 @@ p
   color:white;
   padding-left: 80px;
   font-size: 20px;
+  border: 1px solid rgb(130, 0, 110);
+  background-color: rgb(130, 0, 110, 0.5);
+  padding: 10px;
+  width: 1300px;
+  margin-left: 80px;
+  
+  
   
 }
 #leftDiv4

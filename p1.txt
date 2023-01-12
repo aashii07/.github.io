@@ -15,13 +15,11 @@ upload - rate, comment
 gallery 
 
 
-RESOURCES
-tips and tricks - beginner level and advanced level
-photo editing softwares
+
 
 fb- https://www.facebook.com/profile.php?id=100089006275242
 
- Write your comments here -->
+Write your comments here -->
 
 
 footer - social media, copyright, contact us, terms and conditions
@@ -29,32 +27,12 @@ navigation bar - home - welcome, posts, about us, gallery, resources and links (
 
 
 
-In fact, some sunsets are so mind-bogglingly beautiful that it can be hard to find words to describe them.
-
-
 join us:
 submit form:
-a) Radio buttons
-b) Checkbox
-c) Input text
-d) Drop down menu
 e) Text area
-
-
-full name c
-email c   phone number
-address c
-dob d
-gender a
-
-
-
-
-
-where did you hear about us b-
 
 query e
 
-terms b- Check box
+terms b Check box
 
 
