@@ -6,34 +6,17 @@ https://photoclub247.com/
 pwd insta: ___perfect.click
 pwd fb: 123456789
 
-
-competition - certificate, topic(food, pet, nature, citylife, candid)
-event calendar
-class - certificate
-exhibition - top 5 in each class
-upload - rate, comment
-gallery 
-
-
-
-
 fb- https://www.facebook.com/profile.php?id=100089006275242
-
-Write your comments here -->
-
-
-footer - social media, copyright, contact us, terms and conditions
-navigation bar - home - welcome, posts, about us, gallery, resources and links (class, workshop, video), contests, event calendar, join us
-
 
 
 join us:
-submit form:
-e) Text area
+submit form php
+click on register button
 
-query e
+sitemap
 
-terms b Check box
+phase 1
 
 
-navbar to change in about us, gallery, sitemap, contact us, join us
+
+

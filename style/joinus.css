@@ -136,7 +136,7 @@ input[type=text]:focus
 hr 
 {
   border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   margin-top: 25px;
   margin-left: 80px;
   margin-right: 70px;
@@ -145,14 +145,18 @@ hr
 /* Set a style for the submit button */
 .registerbtn 
 {
-  background-color: #04AA6D;
+  background-color: #9708df;
   color: white;
   padding: 16px 20px;
   margin: 8px 0;
-  border: none;
+  border-radius: 10px;
   cursor: pointer;
-  width: 100%;
+  width: 35%;
+  height:50%;
   opacity: 0.9;
+  margin-top:20px;
+  margin-left: 33%;
+  margin-bottom: 20px;
 }
 
 .registerbtn:hover 
@@ -164,13 +168,6 @@ hr
 a 
 {
   color: dodgerblue;
-}
-
-/* Set a grey background color and center the text of the "sign in" section */
-.signin 
-{
-  background-color: #f1f1f1;
-  text-align: center;
 }
 
 p container
@@ -192,7 +189,9 @@ p container
   background-color: rgb(130, 0, 110, 0.5);
   padding: 10px;
   width: 1300px;
-  
+}
+#fname label{
+  padding-top: 100px;
 }
 
 
@@ -259,6 +258,13 @@ p
   width: 1300px;
   margin-left: 80px;
   margin-top: 15px;
+}
+@media (max-width: 1450px) {
+  
+  .title p{
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 #leftDiv4
 {
@@ -438,4 +444,78 @@ select
   height: 10px;
   margin-left: 5px;
   content: "✔";
+}
+
+.message p{
+  color:white;
+  font-size: 20px;
+  border: 1px solid rgb(130, 0, 110);
+  background-color: rgb(130, 0, 110, 0.5);
+  padding: 10px;
+  width: 1300px;
+  margin-left: 80px;
+  margin-top: 75px;
+}
+
+.message textarea{
+  width:30%;
+  height:100px;
+  box-sizing:border-box;
+  line-height: 400%;
+  margin-left: 80px;
+  margin-top: 0px;
+}
+
+footer {
+  text-align: center;
+  height: 150px;
+  background: linear-gradient(to right, red, blue);
+  width:100%;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  margin-top: 20px;
+  border-radius: 100%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: white;
+  padding-bottom: 10px;
+}
+
+.fa-phone {
+  background: rgb(240, 82, 82);
+  color: white;
+  padding-bottom: 10px;
+}
+
+.fa-envelope {
+  background: #45bbff;
+  color: white;
+  padding-bottom: 10px;
+}
+
+footer p{
+  color:white;
+  font-size: 20px;
+  padding-top: 2px;
 }
