@@ -5,26 +5,44 @@ img
   padding: 5px;
   width: 350px;
 }
-.topnav
-{
-  min-height: 50px;
-  height: 50px; 
-} 
 /* Add a background color to the top navigation */
 .topnav 
 {
+  /*position: fixed;*/
+  height: auto;
+  width: 100%;
   background: linear-gradient(to right, red, blue);
+  white-space: nowrap;
   overflow: auto;
+  
 }
+/* width */
+.topnav::-webkit-scrollbar {
+  height: 15px;
+}
+/* Track */
+.topnav::-webkit-scrollbar-track {
+  background: #000000; 
+}
+/* Handle */
+.topnav::-webkit-scrollbar-thumb {
+  background: rgba(130, 0, 110, 0.35);
+}
+/* Handle on hover */
+.topnav::-webkit-scrollbar-thumb:hover {
+  background: rgba(130, 0, 110, 0.25); 
+}
+
 /* Style the links inside the navigation bar */
 .topnav a 
 {
-  float: left;
+  display: inline-block;
   color: #ddd;
   text-align: justify;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17.9px;
+  font-size: 17.6px;
+  margin-left: 5px;
 }
 /* Change the color of links on hover */
 .topnav a:hover 
@@ -83,9 +101,16 @@ ul.breadcrumb li a:hover
 
 
 h1 {
-text-align: center;
-padding: 32px;
-color: #ddd;
+  text-align: center;
+  color: #ddd;
+  font-size: 30px;
+  border: 1px solid rgb(130, 0, 110);
+  background-color: rgb(130, 0, 110, 0.5);
+  padding: 10px;
+  width: 1320px;
+  margin-left: 75px;
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
 
 .row {
@@ -96,6 +121,7 @@ color: #ddd;
   padding: 0 4px;
   margin-left: 60px;
 }
+
 
 /* Create four equal columns that sits next to each other */
 .column {
@@ -114,18 +140,82 @@ color: #ddd;
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-.column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
+.column{
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
 }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
 }
 }
+
+.c {
+  float: left;
+  width: 18%;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-right: 5%;
+}
+
+/* Clear floats after image containers */
+.r::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.c a:link, a:visited {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  color: rgb(255, 255, 255);
+  padding: 14px 25px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 60px;
+  
+}
+
+
+.c a.food:hover, a.food:active {
+  background-image: url(../gallery/food.jpg) !important;
+  
+}
+.c a.nature:hover, a.nature:active {
+  background-image: url(../gallery/nature.jpg) !important;
+  
+}
+.c a.people:hover, a.people:active {
+  background-image: url(../gallery/people.jpg) !important;
+  
+}
+.c a.city:hover, a.city:active {
+  background-image: url(../gallery/cityscape.jpg) !important;
+  
+}
+@media (max-width: 1200px) {
+  .r{
+    flex-direction: column;
+  }
+  .c a:link, a:visited{
+    font-size: 40px;
+  }
+  h1{
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+

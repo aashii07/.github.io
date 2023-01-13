@@ -5,26 +5,44 @@ img
   padding: 5px;
   width: 350px;
 }
-.topnav
-{
-  min-height: 50px;
-  height: 50px; 
-} 
 /* Add a background color to the top navigation */
 .topnav 
 {
+  /*position: fixed;*/
+  height: auto;
+  width: 100%;
   background: linear-gradient(to right, red, blue);
+  white-space: nowrap;
   overflow: auto;
+  
 }
+/* width */
+.topnav::-webkit-scrollbar {
+  height: 15px;
+}
+/* Track */
+.topnav::-webkit-scrollbar-track {
+  background: #000000; 
+}
+/* Handle */
+.topnav::-webkit-scrollbar-thumb {
+  background: rgba(130, 0, 110, 0.35);
+}
+/* Handle on hover */
+.topnav::-webkit-scrollbar-thumb:hover {
+  background: rgba(130, 0, 110, 0.25); 
+}
+
 /* Style the links inside the navigation bar */
 .topnav a 
 {
-  float: left;
+  display: inline-block;
   color: #ddd;
   text-align: justify;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17.9px;
+  font-size: 17.6px;
+  margin-left: 5px;
 }
 /* Change the color of links on hover */
 .topnav a:hover 
@@ -104,6 +122,7 @@ h1 {
   margin-left: 60px;
 }
 
+
 /* Create four equal columns that sits next to each other */
 .column {
   -ms-flex: 23%; /* IE10 */
@@ -121,7 +140,7 @@ h1 {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
-.column {
+.column{
   -ms-flex: 50%;
   flex: 50%;
   max-width: 50%;
@@ -171,6 +190,34 @@ h1 {
 .c a:hover, a:active {
   background-image: url(../gallery/animal.jpg);
   
+}
+.c a.ani:hover, a.ani:active {
+  background-image: url(../gallery/animal.jpg) !important;
+  
+}
+.c a.food:hover, a.food:active {
+  background-image: url(../gallery/food.jpg) !important;
+  
+}
+.c a.nature:hover, a.nature:active {
+  background-image: url(../gallery/nature.jpg) !important;
+  
+}
+.c a.city:hover, a.city:active {
+  background-image: url(../gallery/cityscape.jpg) !important;
+  
+}
+@media (max-width: 1200px) {
+  .r{
+    flex-direction: column;
+  }
+  .c a:link, a:visited{
+    font-size: 40px;
+  }
+  h1{
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 
 

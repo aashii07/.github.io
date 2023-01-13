@@ -12,17 +12,37 @@ img
   height: auto;
   width: 100%;
   background: linear-gradient(to right, red, blue);
+  white-space: nowrap;
   overflow: auto;
+  
 }
+/* width */
+.topnav::-webkit-scrollbar {
+  height: 15px;
+}
+/* Track */
+.topnav::-webkit-scrollbar-track {
+  background: #000000; 
+}
+/* Handle */
+.topnav::-webkit-scrollbar-thumb {
+  background: rgba(130, 0, 110, 0.35);
+}
+/* Handle on hover */
+.topnav::-webkit-scrollbar-thumb:hover {
+  background: rgba(130, 0, 110, 0.25); 
+}
+
 /* Style the links inside the navigation bar */
 .topnav a 
 {
-  float: left;
+  display: inline-block;
   color: #ddd;
   text-align: justify;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17.9px;
+  font-size: 17.6px;
+  margin-left: 5px;
 }
 /* Change the color of links on hover */
 .topnav a:hover 
