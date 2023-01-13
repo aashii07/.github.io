@@ -36,3 +36,4 @@ query e
 terms b Check box
 
 
+navbar to change in about us, gallery, sitemap, contact us, join us

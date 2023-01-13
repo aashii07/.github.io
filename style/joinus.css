@@ -92,6 +92,7 @@ ul.breadcrumb li a:hover
 h1
 {
   color: rgb(255, 255, 255);
+  margin-left: 80px;
 }
 
 /* Full-width input fields */
@@ -118,6 +119,9 @@ hr
 {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 80px;
+  margin-right: 70px;
 }
 
 /* Set a style for the submit button */
@@ -156,10 +160,20 @@ p container
   color: inherit;
 }
 
-label 
+.container label 
 {
 	color: white;
+  font-size: 18px;
+  
+}
+
+.title2 label{
+  color:white;
   font-size: 20px;
+  border: 1px solid rgb(130, 0, 110);
+  background-color: rgb(130, 0, 110, 0.5);
+  padding: 10px;
+  width: 1300px;
   
 }
 
@@ -216,16 +230,17 @@ label
 p
 {
   color:white;
-  padding-left: 80px;
+}
+
+.title p{
+  color:white;
   font-size: 20px;
   border: 1px solid rgb(130, 0, 110);
   background-color: rgb(130, 0, 110, 0.5);
   padding: 10px;
   width: 1300px;
   margin-left: 80px;
-  
-  
-  
+  margin-top: 15px;
 }
 #leftDiv4
 {
