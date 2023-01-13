@@ -106,7 +106,7 @@ h2
 h2
 {
   justify-content: center;
-  font-size:1em;
+  font-size:2em;
   font-weight:bold;
 }
 
@@ -117,4 +117,6 @@ span{
 
 .resize {
   width: 60px;
+  padding-left: 0px;
 }
+
