@@ -150,34 +150,17 @@ footer p{
   padding-top: 2px;
 }
 
-/*Caption*/
-figure {
-  padding: -2px;
-  margin: auto;
-  
-}
-.flex-container img{
-  width: 470px;
-  height: 370px;
-}
-
-h3 {
-  color: white;
-  text-align: center;
-  font-size: 27px;
-}
-
-figcaption {
-  background-color: black;
-  color: white;
-  font-size: 18px;
-  padding: -2px;
-}
 
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
   background-color: rgb(0, 0, 0);
+  border-style: groove;
+  border-width: 5px;
+  border-color: rgb(130, 0, 110);
+  margin-left: 60px;
+  margin-right: 60px;
+  
 }
 
 .flex-container>div {
@@ -195,3 +178,44 @@ figcaption {
   }
 }
 
+.c a:link,
+a:visited {
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 370px;
+  height: auto;
+  color: rgb(255, 255, 255);
+  padding: 14px 25px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  line-height: 50px;
+
+}
+
+.cap{
+  color: rgba(130, 0, 110, 0.5);
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.c a.k:hover,
+a.k:active {
+  background-image: url(../gallery/koala.jpg) !important;
+
+}
+
+.c a.s:hover,
+a.s:active {
+  background-image: url(../gallery/sushi.jpg) !important;
+
+}
+
+.c a.b:hover,
+a.b:active {
+  background-image: url(../gallery/birthday.jpg) !important;
+
+}
