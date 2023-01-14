@@ -14,8 +14,7 @@ img
   background: linear-gradient(to right, red, blue);
   white-space: nowrap;
   overflow: auto;
-  font-size:33px;
-  
+  font-size: 33px;
 }
 /* width */
 .topnav::-webkit-scrollbar {
@@ -98,127 +97,6 @@ ul.breadcrumb li a:hover
 {
   color: rgb(100, 20, 125) !important;
 }
-
-
-
-h1 {
-  text-align: center;
-  color: #ddd;
-  font-size: 30px;
-  border: 1px solid rgb(130, 0, 110);
-  background-color: rgb(130, 0, 110, 0.5);
-  padding: 10px;
-  width: 1320px;
-  margin-left: 75px;
-  margin-top: 70px;
-  margin-bottom: 30px;
-}
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-  margin-left: 60px;
-}
-
-
-/* Create four equal columns that sits next to each other */
-.column {
-  -ms-flex: 23%; /* IE10 */
-  flex: 23%;
-  max-width: 23%;
-  padding: 0 4px;
-  
-}
-
-.column img {
-  vertical-align: middle;
-  width: 100%;
-  
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-.column{
-  -ms-flex: 50%;
-  flex: 50%;
-  max-width: 50%;
-}
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-.column {
-  -ms-flex: 100%;
-  flex: 100%;
-  max-width: 100%;
-}
-}
-
-.c {
-  float: left;
-  width: 18%;
-  padding: 5px;
-  margin-top: 20px;
-  margin-left: 20px;
-  padding-right: 5%;
-}
-
-/* Clear floats after image containers */
-.r::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.c a:link, a:visited {
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
-  color: rgb(255, 255, 255);
-  padding: 14px 25px;
-  margin-left: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 60px;
-  
-}
-
-
-.c a.food:hover, a.food:active {
-  background-image: url(../gallery/food.jpg) !important;
-  
-}
-.c a.nature:hover, a.nature:active {
-  background-image: url(../gallery/nature.jpg) !important;
-  
-}
-.c a.people:hover, a.people:active {
-  background-image: url(../gallery/people.jpg) !important;
-  
-}
-.c a.city:hover, a.city:active {
-  background-image: url(../gallery/cityscape.jpg) !important;
-  
-}
-@media (max-width: 1200px) {
-  .r{
-    flex-direction: column;
-  }
-  .c a:link, a:visited{
-    font-size: 40px;
-  }
-  h1{
-    width: 100%;
-    margin-left: 0px;
-  }
-}
-
 footer {
   text-align: center;
   height: 150px;
@@ -271,3 +149,4 @@ footer p{
   font-size: 20px;
   padding-top: 2px;
 }
+

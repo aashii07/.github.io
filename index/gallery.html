@@ -8,18 +8,19 @@
     <body>
         <p>
             <div class="Logo">
-                <img src="../gallery/logo.png" width="270" height="140">
+                <img src="../gallery/logo.png" >
             </div>
         </p> 
         <p>
             <div class="topnav">
-                <a href="home.html">&emsp;&emsp;&emsp;Home&emsp;&emsp;&emsp;</a> 
-                <a href="aboutus.html">&emsp;&emsp;&emsp;About us&emsp;&emsp;&emsp;</a> 
-                <a class="active">&emsp;&emsp;&emsp;Gallery&emsp;&emsp;&emsp;</a> 
-                <a href="resources&links.html">&emsp;&emsp;&emsp;Resources & Links&emsp;&emsp;&emsp;</a> 
-                <a href="sitemap.html">&emsp;&emsp;&emsp;Sitemap&emsp;&emsp;&emsp;</a> 
-                <a href="contactus.html">&emsp;&emsp;&emsp;Contact us&emsp;&emsp;&emsp;</a> 
-                <a href="joinus.html">&emsp;&emsp;&emsp;Join us&emsp;&emsp;&emsp;</a>
+                <a href="home.html">&emsp;&emsp;Home&emsp;&emsp;</a>
+                <a href="posts.html">&emsp;&emsp;Posts&emsp;&emsp;</a> 
+                <a href="aboutus.html">&emsp;&emsp;About us&emsp;&emsp;</a> 
+                <a class="active">&emsp;&emsp;Gallery&emsp;&emsp;</a> 
+                <a href="resources&links.html">&emsp;&emsp;Resources & Links&emsp;&emsp;</a> 
+                <a href="sitemap.html">&emsp;&emsp;Sitemap&emsp;&emsp;</a> 
+                <a href="contactus.html">&emsp;&emsp;Contact us&emsp;&emsp;</a> 
+                <a href="joinus.html">&emsp;&emsp;Join us&emsp;&emsp;</a>
             
             </div>
         </p>
@@ -55,21 +56,32 @@
                     url(../gallery/people.jpg);">People</a>
             </div>
             <div class="c">
-                <a class="city" href="cityscape.html" style="background-image: linear-gradient(
+                <a class="city" href="city.html" style="background-image: linear-gradient(
                     rgba(0, 0, 0, 0.5),
                     rgba(0, 0, 0, 0.5)),
                     url(../gallery/cityscape.jpg);">Cityscape</a>
             </div>
         </div>
         <h2>Be part of the Perfect Click Gallery</h2>
+        <div class="container">
+            <div class="email">
+                <input type="text" name="" required placeholder="Enter your email to upload"><br>
+                <br>
+            </div>
+            <div class="upload">
+                <label for="images" class="drop-container">
+                    <span class="drop-title">Drop an image here<br>or</span>
+                    <input type="file" id="images" accept="image/*" required>
+                </label>
+            </div>
+            <div class="submit">
+                <form action="/action_page.php">
+                    <input type="submit" value="Upload">
+                </form>
+            </div>
+            
+        </div>
         
-        <form action="/action_page.php">
-            <label for="images" class="drop-container">
-                <span class="drop-title">Drop an image here<br>or</span>
-                <input type="file" id="images" accept="image/*" required>
-            </label>
-            <input type="submit" value="Upload">
-        </form>
     </body>
     <footer>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >

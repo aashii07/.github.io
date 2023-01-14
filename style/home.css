@@ -5,7 +5,7 @@ body {
 img {
   border-radius: 3px;
   padding: 5px;
-  width: 350px;
+  width: 400px;
 }
 
 /* Add a background color to the top navigation */
@@ -16,7 +16,7 @@ img {
   background: linear-gradient(to right, red, blue);
   white-space: nowrap;
   overflow: auto;
-
+  font-size: 33px;
 }
 
 /* width */
@@ -47,7 +47,7 @@ img {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17.6px;
-  margin-left: 5px;
+  margin-left: 13px;
 }
 
 /* Change the color of links on hover */
@@ -69,20 +69,23 @@ figure {
 }
 
 h3 {
-  color: white;
+  color: rgb(35, 132, 230);
   text-align: center;
-  font-size: 25px;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 12px;
 }
 
 figcaption {
   background-color: black;
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   padding: -2px;
 }
 
 .flex-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
   background-color: rgb(0, 0, 0);
 }
@@ -92,8 +95,12 @@ figcaption {
   width: 100%;
   margin: 10px;
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 25px;
+}
+
+.flex-container img{
+  width: 900px;
 }
 
 @media (max-width: 1200px) {

@@ -3,7 +3,7 @@ img
 {
   border-radius: 3px;
   padding: 5px;
-  width: 350px;
+  width: 400px;
 }
 /* Add a background color to the top navigation */
 .topnav 
@@ -14,7 +14,7 @@ img
   background: linear-gradient(to right, red, blue);
   white-space: nowrap;
   overflow: auto;
-  
+  font-size: 33px;
 }
 /* width */
 .topnav::-webkit-scrollbar {
@@ -42,7 +42,7 @@ img
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17.6px;
-  margin-left: 5px;
+  margin-left: 13px;
 }
 /* Change the color of links on hover */
 .topnav a:hover 
@@ -189,7 +189,7 @@ h1 {
 }
 
 .c a.ani:hover, a.ani:active {
-    background-image: url(../gallery/ani.jpg) !important;
+    background-image: url(../gallery/animal.jpg) !important;
     
   }
 .c a.food:hover, a.food:active {

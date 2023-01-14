@@ -17,6 +17,13 @@ sitemap
 
 phase 1
 
+post-camera
+about-circle-user
+gallery-image
+r&l-link
+sitemap-sitemap
+contact-phone
+join-users/handshake
 
 
 

@@ -5,7 +5,7 @@ body {
 img {
   border-radius: 3px;
   padding: 5px;
-  width: 350px;
+  width: 400px;
 }
 
 /* Add a background color to the top navigation */
@@ -16,7 +16,7 @@ img {
   background: linear-gradient(to right, red, blue);
   white-space: nowrap;
   overflow: auto;
-
+  font-size: 33px;
 }
 
 /* width */
@@ -47,7 +47,7 @@ img {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17.6px;
-  margin-left: 5px;
+  margin-left: 13px;
 }
 
 /* Change the color of links on hover */
@@ -249,16 +249,16 @@ input[type=file]::file-selector-button {
 input[type=submit] {
   background-color: #9708df;
   color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
+  padding: 16px;
   border-radius: 10px;
   cursor: pointer;
-  width: 35%;
+  width: 800%;
   height:50%;
   opacity: 0.9;
   margin-top: 1px;
-  margin-left: 33%;
-  margin-bottom: 50px;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-bottom: 40px;
   transition: background .2s ease-in-out;
 }
 
@@ -316,4 +316,43 @@ footer p{
   color:white;
   font-size: 20px;
   padding-top: 2px;
+}
+
+.container{
+  width:auto;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  flex-flow:wrap;
+  position: relative;
+  top: -15px;
+  margin: 25px;
+}
+
+.email{
+  height:10%;
+  box-sizing:border-box;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  
+}
+
+.upload{
+  height: 70%;
+  width: 100%;
+}
+
+.submit{
+  height:10%;
+  display:block;
+  top: 325%;
+  left: 5%;
+  transform: translate(-325%, 5%);
+}
+
+input[type="text"] {
+  width: 450px;
+  height: 50px
 }

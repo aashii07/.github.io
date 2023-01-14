@@ -3,7 +3,7 @@ img
 {
   border-radius: 3px;
   padding: 5px;
-  width: 350px;
+  width: 400px;
 }
 /* Add a background color to the top navigation */
 .topnav 
@@ -14,7 +14,7 @@ img
   background: linear-gradient(to right, red, blue);
   white-space: nowrap;
   overflow: auto;
-  
+  font-size: 33px;
 }
 /* width */
 .topnav::-webkit-scrollbar {
@@ -42,7 +42,7 @@ img
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17.6px;
-  margin-left: 5px;
+  margin-left: 13px;
 }
 /* Change the color of links on hover */
 .topnav a:hover 
@@ -97,6 +97,59 @@ ul.breadcrumb li a:hover
 {
   color: rgb(100, 20, 125) !important;
 }
+
+h1 a{
+  color:rgba(240, 15, 139, 0.7);
+  padding-left:45%;
+  font-size:40px;
+  text-decoration: none;
+}
+h2 a{
+  color:white;
+}
+h3 a{
+  color:rgba(68, 173, 234,0.4);
+}
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(0, 0, 0);
+  
+}
+
+.flex-container>div {
+  background-color: #000000;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 0px;
+}
+.flex-container a{
+  text-decoration: none;
+}
+h1 a:hover{
+  color:rgb(255, 0, 140) !important;
+}
+h2 a:hover{
+  color:rgb(170, 2, 210) !important;
+}
+h3 a:hover{
+  color:rgb(68, 173, 234) !important;
+}
+
+ul {
+  list-style: none; /* Remove list bullets */
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+li::before{
+  content:"»";
+  padding-right: 4px;
+}
+
 footer {
   text-align: center;
   height: 150px;
@@ -150,3 +203,14 @@ footer p{
   padding-top: 2px;
 }
 
+/*Icons*/
+.fa-home{
+  background: none;
+  color: white;
+  padding-bottom: 10px;
+}
+.fa-camera-retro{
+  background: none;
+  color: white;
+  padding-bottom: 10px;
+}
