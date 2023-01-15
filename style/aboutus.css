@@ -58,13 +58,13 @@ img
   color: rgb(130, 0, 110);
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
   .vid {
     float: left;
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
   .vid {
     width: 100%;
     display: inline block;
@@ -75,13 +75,25 @@ img
   }
 }
 
-.text
+.text p
 {
+  margin-top: 0px;
   color: white;
   text-align: center;
   font-size:20px;
   line-height: 30px;
     
+}
+
+.text h1{
+  font-size: 50px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-align: center;
+  background: -webkit-linear-gradient(#fdf497 0%, #fdf497 5%, #fd5949 45%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Style the list */

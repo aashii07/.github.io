@@ -260,3 +260,30 @@ footer p{
   font-size: 20px;
   padding-top: 2px;
 }
+
+@media (max-width: 1350px) {
+  .container {
+    flex-direction: column;
+  }
+  .contactinfo{
+    width:100%;
+    margin:20px;
+    float:right;
+    line-height: 350%;
+    font-size: 20px;
+    
+  }
+  .message
+{
+  width:100%;
+  margin: 0 auto;
+}
+.msg{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-style: normal;
+  width: 100%;
+  
+  margin-top: 500px;
+}
+}
