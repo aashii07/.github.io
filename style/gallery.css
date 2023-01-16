@@ -268,6 +268,9 @@ input[type=submit] {
   margin-bottom: 40px;
   transition: background .2s ease-in-out;
 }
+.registerbtn:hover{
+  opacity: 0.8;
+}
 
 input[type=file]::file-selector-button:hover {
   background: #0d45a5;
