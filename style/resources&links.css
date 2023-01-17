@@ -5,7 +5,9 @@ img
   padding: 5px;
   width: 400px;
 }
-
+.Logo img{
+  float:left;
+}
 /* Add a background color to the top navigation */
 .topnav 
 {
@@ -214,4 +216,21 @@ footer p{
   color:white;
   font-size: 20px;
   padding-top: 2px;
+}
+
+.event{
+  color:white;
+  font-style: italic;
+  font-size: 18px;
+  float:right;
+  margin-right:0px;
+  padding-right:0px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.event img{
+  width:12%;
+  height:auto;
+  float:left;
 }

@@ -4,6 +4,8 @@ img
   border-radius: 3px;
   padding: 5px;
   width: 400px;
+}
+.Logo img{
   float:left;
 }
 /* Add a background color to the top navigation */
@@ -231,13 +233,18 @@ footer p{
 
 .event{
   color:white;
+  font-style: italic;
+  font-size: 18px;
   float:right;
   margin-right:0px;
   padding-right:0px;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .event img{
-  width:10%;
+  width:12%;
   height:auto;
+  float:left;
 }
 
