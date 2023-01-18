@@ -7,8 +7,9 @@ img {
   padding: 5px;
   width: 400px;
 }
-.Logo img{
-  float:left;
+
+.Logo img {
+  float: left;
 }
 
 /* Add a background color to the top navigation */
@@ -170,11 +171,13 @@ a.city:active {
     flex-direction: column;
     width: 100%;
   }
+
   .c a:link,
   a:visited {
     font-size: 30px;
   }
-  h2{
+
+  h2 {
     width: 90% !important;
   }
 
@@ -182,13 +185,13 @@ a.city:active {
 
     height: 100% !important;
     width: 50% !important;
-    
+
   }
-  
+
 }
 
-h2{
-  color:white;
+h2 {
+  color: white;
   font-size: 25px;
   border: 1px solid rgb(130, 0, 110);
   background-color: rgb(130, 0, 110, 0.5);
@@ -198,6 +201,7 @@ h2{
   margin-top: 60px;
   text-align: center;
 }
+
 .drop-container {
   margin-top: 20px;
   margin-left: 22%;
@@ -263,7 +267,7 @@ input[type=submit] {
   border-radius: 10px;
   cursor: pointer;
   width: 800%;
-  height:50%;
+  height: 50%;
   opacity: 0.9;
   margin-top: 1px;
   margin-left: 0px;
@@ -271,13 +275,15 @@ input[type=submit] {
   margin-bottom: 40px;
   transition: background .2s ease-in-out;
 }
-.registerbtn:hover{
+
+.registerbtn:hover {
   opacity: 0.8;
 }
 
 input[type=file]::file-selector-button:hover {
   background: #0d45a5;
 }
+
 footer {
   text-align: center;
   height: 150px;
@@ -325,41 +331,41 @@ footer {
   padding-bottom: 10px;
 }
 
-footer p{
-  color:white;
+footer p {
+  color: white;
   font-size: 20px;
   padding-top: 2px;
 }
 
-.container{
-  width:auto;
-  height:100%;
-  display:flex;
-  flex-direction:column;
+.container {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-flow:wrap;
+  flex-flow: wrap;
   position: relative;
   top: -15px;
   margin: 25px;
 }
 
-.email{
-  height:10%;
-  box-sizing:border-box;
+.email {
+  height: 10%;
+  box-sizing: border-box;
   margin-left: 10px;
   margin-top: 20px;
   margin-bottom: 0px;
-  
+
 }
 
-.upload{
+.upload {
   height: 70%;
   width: 100%;
 }
 
-.submit{
-  height:10%;
-  display:block;
+.submit {
+  height: 10%;
+  display: block;
   top: 325%;
   left: 5%;
   transform: translate(-325%, 5%);
@@ -370,19 +376,19 @@ input[type="text"] {
   height: 50px
 }
 
-.event{
-  color:white;
+.event {
+  color: white;
   font-style: italic;
   font-size: 18px;
-  float:right;
-  margin-right:0px;
-  padding-right:0px;
+  float: right;
+  margin-right: 0px;
+  padding-right: 0px;
   margin-bottom: 40px;
   margin-top: 20px;
 }
 
-.event img{
-  width:12%;
-  height:auto;
-  float:left;
+.event img {
+  width: 12%;
+  height: auto;
+  float: left;
 }

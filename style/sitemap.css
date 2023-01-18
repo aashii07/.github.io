@@ -1,16 +1,19 @@
-body {background-color: rgb(0, 0, 0);} 
-img 
-{
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+img {
   border-radius: 3px;
   padding: 5px;
   width: 400px;
 }
-.Logo img{
-  float:left;
+
+.Logo img {
+  float: left;
 }
+
 /* Add a background color to the top navigation */
-.topnav 
-{
+.topnav {
   /*position: fixed;*/
   height: auto;
   width: 100%;
@@ -19,26 +22,29 @@ img
   overflow: auto;
   font-size: 33px;
 }
+
 /* width */
 .topnav::-webkit-scrollbar {
   height: 15px;
 }
+
 /* Track */
 .topnav::-webkit-scrollbar-track {
-  background: #000000; 
+  background: #000000;
 }
+
 /* Handle */
 .topnav::-webkit-scrollbar-thumb {
   background: rgba(130, 0, 110, 0.35);
 }
+
 /* Handle on hover */
 .topnav::-webkit-scrollbar-thumb:hover {
-  background: rgba(130, 0, 110, 0.25); 
+  background: rgba(130, 0, 110, 0.25);
 }
 
 /* Style the links inside the navigation bar */
-.topnav a 
-{
+.topnav a {
   display: inline-block;
   color: #ddd;
   text-align: justify;
@@ -47,36 +53,34 @@ img
   font-size: 17.6px;
   margin-left: 13px;
 }
+
 /* Change the color of links on hover */
-.topnav a:hover 
-{
+.topnav a:hover {
   background-color: rgba(221, 221, 221, 0.4);
   color: rgb(130, 0, 110);
 }
+
 /*Add a color to the active/current link */
-.topnav a.active 
-{
+.topnav a.active {
   background-color: #ddd;
   color: rgb(130, 0, 110);
 }
+
 /* Style the list */
-ul.breadcrumb 
-{
+ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
   background-color: rgb(0, 0, 0);
 }
 
 /* Display list items side by side */
-ul.breadcrumb li 
-{
+ul.breadcrumb li {
   display: inline;
   font-size: 18px;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before 
-{
+ul.breadcrumb li+li:before {
   padding: 8px;
   color: rgb(255, 255, 255);
   content: "›";
@@ -84,47 +88,51 @@ ul.breadcrumb li+li:before
 }
 
 /* Add a color to all links inside the list */
-ul.breadcrumb li a 
-{
+ul.breadcrumb li a {
   color: rgb(130, 0, 110);
   text-decoration: none;
 }
 
 /* Add a color on mouse-over */
-ul.breadcrumb li a:hover 
-{
+ul.breadcrumb li a:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
-.breadcrumblink
-{
+
+.breadcrumblink {
   color: rgb(100, 20, 125) !important;
 }
 
-h1{
-  padding-left:42%;
-  font-size:50px;
-  padding-bottom:0%;
-  margin-bottom:1%;
+h1 {
+  padding-left: 42%;
+  font-size: 50px;
+  padding-bottom: 0%;
+  margin-bottom: 1%;
 }
-h2{
-  font-size:30px;
-  padding-left:0%;
-  margin:0%;
+
+h2 {
+  font-size: 30px;
+  padding-left: 0%;
+  margin: 0%;
 }
-h3{
+
+h3 {
   text-align: left;
-  padding-left:30%;
+  padding-left: 30%;
 }
-h1 a{
+
+h1 a {
   text-decoration: none;
 }
-h2 a{
-  color:white;
+
+h2 a {
+  color: white;
 }
-h3 a{
-  color:rgba(68, 173, 234,0.4);
+
+h3 a {
+  color: rgba(68, 173, 234, 0.4);
 }
+
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
@@ -140,27 +148,33 @@ h3 a{
   line-height: 35px;
   margin-top: 0px;
 }
-.flex-container a{
+
+.flex-container a {
   text-decoration: none;
 }
-h1 a:hover{
-  color:yellow !important;
+
+h1 a:hover {
+  color: yellow !important;
 }
-h2 a:hover{
-  color:rgb(170, 2, 210) !important;
+
+h2 a:hover {
+  color: rgb(170, 2, 210) !important;
 }
-h3 a:hover{
-  color:rgb(68, 173, 234) !important;
+
+h3 a:hover {
+  color: rgb(68, 173, 234) !important;
 }
 
 ul {
-  list-style: none; /* Remove list bullets */
+  list-style: none;
+  /* Remove list bullets */
   text-decoration: none;
   padding: 0;
   margin: 0;
 }
-li::before{
-  content:"»";
+
+li::before {
+  content: "»";
   padding-right: 4px;
 }
 
@@ -211,44 +225,51 @@ footer {
   padding-bottom: 10px;
 }
 
-footer p{
-  color:white;
+footer p {
+  color: white;
   font-size: 20px;
   padding-top: 2px;
 }
 
 /*Icons*/
-.fa-home{
+.fa-home {
   background: none;
   color: white;
 }
-.fa-camera-retro{
+
+.fa-camera-retro {
   background: none;
   color: white;
 }
-.fa-user{
+
+.fa-user {
   background: none;
   color: white;
 }
-.fa-image{
+
+.fa-image {
   background: none;
   color: white;
 }
-.fa-link{
+
+.fa-link {
   background: none;
   color: white;
-  
-  
+
+
 }
-#phone{
-  background: none;
-  color: white;
-}
-.fa-sitemap{
+
+#phone {
   background: none;
   color: white;
 }
-.fa-users{
+
+.fa-sitemap {
+  background: none;
+  color: white;
+}
+
+.fa-users {
   background: none;
   color: white;
 }
@@ -257,33 +278,35 @@ footer p{
   .flex-container {
     flex-direction: column;
   }
-  h1{
-    padding-left:0px;
+
+  h1 {
+    padding-left: 0px;
     text-align: center;
-    font-size:50px;
-    padding-bottom:0%;
-    margin-bottom:1%;
+    font-size: 50px;
+    padding-bottom: 0%;
+    margin-bottom: 1%;
   }
-  h3{
+
+  h3 {
     text-align: center;
-    padding-left:0%;
-    
+    padding-left: 0%;
+
   }
 }
 
-.event{
-  color:white;
+.event {
+  color: white;
   font-style: italic;
   font-size: 18px;
-  float:right;
-  margin-right:0px;
-  padding-right:0px;
+  float: right;
+  margin-right: 0px;
+  padding-right: 0px;
   margin-bottom: 40px;
   margin-top: 20px;
 }
 
-.event img{
-  width:12%;
-  height:auto;
-  float:left;
+.event img {
+  width: 12%;
+  height: auto;
+  float: left;
 }

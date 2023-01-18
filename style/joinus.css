@@ -1,16 +1,19 @@
-body {background-color: rgb(0, 0, 0);} 
-img 
-{
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+img {
   border-radius: 3px;
   padding: 5px;
   width: 400px;
 }
-.Logo img{
-  float:left;
+
+.Logo img {
+  float: left;
 }
+
 /* Add a background color to the top navigation */
-.topnav 
-{
+.topnav {
   /*position: fixed;*/
   height: auto;
   width: 100%;
@@ -19,26 +22,29 @@ img
   overflow: auto;
   font-size: 33px;
 }
+
 /* width */
 .topnav::-webkit-scrollbar {
   height: 15px;
 }
+
 /* Track */
 .topnav::-webkit-scrollbar-track {
-  background: #000000; 
+  background: #000000;
 }
+
 /* Handle */
 .topnav::-webkit-scrollbar-thumb {
   background: rgba(130, 0, 110, 0.35);
 }
+
 /* Handle on hover */
 .topnav::-webkit-scrollbar-thumb:hover {
-  background: rgba(130, 0, 110, 0.25); 
+  background: rgba(130, 0, 110, 0.25);
 }
 
 /* Style the links inside the navigation bar */
-.topnav a 
-{
+.topnav a {
   display: inline-block;
   color: #ddd;
   text-align: justify;
@@ -47,37 +53,34 @@ img
   font-size: 17.6px;
   margin-left: 13px;
 }
+
 /* Change the color of links on hover */
-.topnav a:hover 
-{
+.topnav a:hover {
   background-color: rgba(221, 221, 221, 0.4);
   color: rgb(130, 0, 110);
 }
+
 /*Add a color to the active/current link */
-.topnav a.active 
-{
+.topnav a.active {
   background-color: #ddd;
   color: rgb(130, 0, 110);
 }
 
 /* Style the list */
-ul.breadcrumb 
-{
+ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
   background-color: rgb(0, 0, 0);
 }
 
 /* Display list items side by side */
-ul.breadcrumb li 
-{
+ul.breadcrumb li {
   display: inline;
   font-size: 18px;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before 
-{
+ul.breadcrumb li+li:before {
   padding: 8px;
   color: rgb(255, 255, 255);
   content: "›";
@@ -85,40 +88,35 @@ ul.breadcrumb li+li:before
 }
 
 /* Add a color to all links inside the list */
-ul.breadcrumb li a 
-{
+ul.breadcrumb li a {
   color: rgb(130, 0, 110);
   text-decoration: none;
 }
 
 /* Add a color on mouse-over */
-ul.breadcrumb li a:hover 
-{
+ul.breadcrumb li a:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
-.breadcrumblink
-{
+
+.breadcrumblink {
   color: rgb(100, 20, 125) !important;
 }
 
 /* Add padding to containers */
-.container 
-{
+.container {
   padding: 16px;
   background-color: black;
 }
 
 
-h1
-{
+h1 {
   color: rgb(255, 255, 255);
   margin-left: 80px;
 }
 
 /* Full-width input fields */
-input[type=text]
-{
+input[type=text] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -128,16 +126,14 @@ input[type=text]
 
 }
 
-input[type=text]:focus 
-{
+input[type=text]:focus {
   background-color: #ddd;
   outline: none;
 }
 
 
 /* Overwrite default styles of hr */
-hr 
-{
+hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 50px;
   margin-top: 25px;
@@ -146,8 +142,7 @@ hr
 }
 
 /* Set a style for the submit button */
-.registerbtn 
-{
+.registerbtn {
   background-color: #9708df;
   color: white;
   padding: 16px 20px;
@@ -155,105 +150,96 @@ hr
   border-radius: 10px;
   cursor: pointer;
   width: 35%;
-  height:50%;
+  height: 50%;
   opacity: 0.9;
-  margin-top:20px;
+  margin-top: 20px;
   margin-left: 33%;
   margin-bottom: 20px;
 }
 
-.registerbtn:hover 
-{
+.registerbtn:hover {
   opacity: 1;
 }
 
 /* Add a blue text color to links */
-a 
-{
+a {
   color: dodgerblue;
 }
 
-p container
-{
+p container {
   color: inherit;
 }
 
-.container label 
-{
-	color: white;
+.container label {
+  color: white;
   font-size: 18px;
-  
+
 }
 
-.title2 label{
-  color:white;
+.title2 label {
+  color: white;
   font-size: 20px;
   border: 1px solid rgb(130, 0, 110);
   background-color: rgb(130, 0, 110, 0.5);
   padding: 10px;
   width: 1300px;
 }
-#fname label{
+
+#fname label {
   padding-top: 100px;
 }
 
 
-#leftDiv
-{
-  padding:38px;
+#leftDiv {
+  padding: 38px;
   padding-right: 100px;
   padding-left: 80px;
-  display:table-cell;
-  width:30%;
+  display: table-cell;
+  width: 30%;
 }
 
-#rightDiv
-{
-  padding:38px;
+#rightDiv {
+  padding: 38px;
   padding-left: 100px;
   padding-right: 100px;
-  display:table-cell;
-  width:30%;
+  display: table-cell;
+  width: 30%;
 }
 
-#leftDiv2
-{
-  padding:38px;
+#leftDiv2 {
+  padding: 38px;
   padding-right: 100px;
   padding-left: 80px;
   padding-top: 1px;
-  display:table-cell;
-  width:40%;
+  display: table-cell;
+  width: 40%;
 }
 
-#rightDiv2
-{
-  padding:38px;
+#rightDiv2 {
+  padding: 38px;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 1px;
-  display:table-cell;
-  width:25%;
+  display: table-cell;
+  width: 25%;
 }
 
-#parentDiv3
-{
-  padding:38px;
+#parentDiv3 {
+  padding: 38px;
   padding-left: 80px;
   padding-right: 100px;
   padding-top: 1px;
   padding-bottom: 25px;
   display: table-cell;
-  width:10%;
+  width: 10%;
 }
 
-p
-{
-  color:white;
+p {
+  color: white;
 }
 
-.title p{
-  color:white;
+.title p {
+  color: white;
   font-size: 20px;
   border: 1px solid rgb(130, 0, 110);
   background-color: rgb(130, 0, 110, 0.5);
@@ -262,47 +248,49 @@ p
   margin-left: 80px;
   margin-top: 15px;
 }
+
 @media (max-width: 1450px) {
-  
-  .title p{
+
+  .title p {
     width: 100%;
     margin-left: 0px;
   }
-  .message p{
+
+  .message p {
     width: 100% !important;
     margin-left: 0px !important;
   }
 }
-#leftDiv4
-{
-  padding:38px;
+
+#leftDiv4 {
+  padding: 38px;
   padding-right: 50px;
   padding-left: 80px;
   padding-top: 1px;
-  display:table-cell;
-  width:40%;
+  display: table-cell;
+  width: 40%;
 }
-#midDiv4
-{
-  padding:38px;
+
+#midDiv4 {
+  padding: 38px;
   padding-right: 50px;
   padding-left: 50px;
   padding-top: 1px;
-  display:table-cell;
-  width:40%;
-  margin-left:5px;
+  display: table-cell;
+  width: 40%;
+  margin-left: 5px;
 }
-#rightDiv4
-{
-  padding:38px;
+
+#rightDiv4 {
+  padding: 38px;
   padding-left: 50px;
   padding-right: 1px;
   padding-top: 1px;
-  display:table-cell;
-  width:40%;
+  display: table-cell;
+  width: 40%;
 }
-select 
-{
+
+select {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -310,18 +298,18 @@ select
   border: none;
   background: #f1f1f1;
 }
-#d
-{
+
+#d {
   padding-right: 1px;
   width: 90%;
 }
-#y
-{
-  width:80%;
+
+#y {
+  width: 80%;
   padding-left: 1px;
 }
-.gender 
-{
+
+.gender {
   display: inline-flex;
   position: relative;
   padding-left: 120px;
@@ -336,7 +324,7 @@ select
   position: absolute;
   opacity: 0;
   cursor: pointer;
-  
+
 }
 
 /* Create a custom radio button */
@@ -349,16 +337,16 @@ select
   background-color: #eee;
   border-radius: 50%;
   margin-left: 85px;
-  
+
 }
 
 /* On mouse-over, add a grey background color */
-.gender:hover input ~ .checkmark {
+.gender:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.gender input:checked ~ .checkmark {
+.gender input:checked~.checkmark {
   background-color: #2196F3;
 }
 
@@ -370,23 +358,22 @@ select
 }
 
 /* Show the indicator (dot/circle) when checked */
-.gender input:checked ~ .checkmark:after {
+.gender input:checked~.checkmark:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
 .gender .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 
-.CheckBox
-{
-  color:white;
+.CheckBox {
+  color: white;
   padding-right: 35px;
 }
 
@@ -398,7 +385,7 @@ select
   margin-bottom: 12px;
   cursor: pointer;
   font-size: 18px;
-  
+
 }
 
 /* Hide the browser's default checkbox */
@@ -422,12 +409,12 @@ select
 }
 
 /* On mouse-over, add a grey background color */
-.CheckBox:hover input ~ .check {
+.CheckBox:hover input~.check {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.CheckBox input:checked ~ .check {
+.CheckBox input:checked~.check {
   background-color: #2195f3;
 }
 
@@ -439,12 +426,12 @@ select
 }
 
 /* Show the checkmark when checked */
-.CheckBox input:checked ~ .check:after {
+.CheckBox input:checked~.check:after {
   display: block;
 }
 
 /* Style the checkmark/indicator */
-.CheckBox input:checked ~ .check:after{
+.CheckBox input:checked~.check:after {
   left: 9px;
   top: 5px;
   width: 10px;
@@ -453,8 +440,8 @@ select
   content: "✔";
 }
 
-.message p{
-  color:white;
+.message p {
+  color: white;
   font-size: 20px;
   border: 1px solid rgb(130, 0, 110);
   background-color: rgb(130, 0, 110, 0.5);
@@ -464,10 +451,10 @@ select
   margin-top: 75px;
 }
 
-.message textarea{
-  width:30%;
-  height:100px;
-  box-sizing:border-box;
+.message textarea {
+  width: 30%;
+  height: 100px;
+  box-sizing: border-box;
   line-height: 400%;
   margin-left: 80px;
   margin-top: 0px;
@@ -477,7 +464,7 @@ footer {
   text-align: center;
   height: 150px;
   background: linear-gradient(to right, red, blue);
-  width:100%;
+  width: 100%;
 }
 
 /* Style all font awesome icons */
@@ -521,27 +508,27 @@ footer {
   padding-bottom: 10px;
 }
 
-footer p{
-  color:white;
+footer p {
+  color: white;
   font-size: 20px;
   padding-top: 2px;
 }
 
-.event{
-  color:white;
+.event {
+  color: white;
   font-style: italic;
   font-size: 18px;
-  float:right;
-  margin-right:0px;
-  padding-right:0px;
+  float: right;
+  margin-right: 0px;
+  padding-right: 0px;
   margin-bottom: 40px;
   margin-top: 20px;
 }
 
-.event img{
-  width:12%;
-  height:auto;
-  float:left;
+.event img {
+  width: 12%;
+  height: auto;
+  float: left;
 }
 
 .button {
@@ -563,6 +550,7 @@ footer p{
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -570,7 +558,7 @@ footer p{
 
 .popup {
   width: 100%;
-  height:auto;
+  height: auto;
   position: relative;
   transition: all 5s ease-in-out;
 }
@@ -585,6 +573,7 @@ footer p{
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
+
 .popup .content {
   overflow: auto;
   font-size: 60px;
@@ -592,21 +581,21 @@ footer p{
   margin-top: 20%;
 }
 
-#popup1{
+#popup1 {
   width: 100%;
   height: 100%;
   position: center;
   background-image: url("../gallery/camera.jpg");
-  background-size:cover;
+  background-size: cover;
 }
 
-.content img{
+.content img {
   width: 10%;
   height: 20%;
 }
 
 .content {
-  background: -webkit-linear-gradient(black 30%,grey 80%);
+  background: -webkit-linear-gradient(black 30%, grey 80%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

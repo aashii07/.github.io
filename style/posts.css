@@ -1,16 +1,19 @@
-body {background-color: rgb(0, 0, 0);} 
-img 
-{
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+img {
   border-radius: 3px;
   padding: 5px;
   width: 400px;
 }
-.Logo img{
-  float:left;
+
+.Logo img {
+  float: left;
 }
+
 /* Add a background color to the top navigation */
-.topnav 
-{
+.topnav {
   /*position: fixed;*/
   height: auto;
   width: 100%;
@@ -19,26 +22,29 @@ img
   overflow: auto;
   font-size: 33px;
 }
+
 /* width */
 .topnav::-webkit-scrollbar {
   height: 15px;
 }
+
 /* Track */
 .topnav::-webkit-scrollbar-track {
-  background: #000000; 
+  background: #000000;
 }
+
 /* Handle */
 .topnav::-webkit-scrollbar-thumb {
   background: rgba(130, 0, 110, 0.35);
 }
+
 /* Handle on hover */
 .topnav::-webkit-scrollbar-thumb:hover {
-  background: rgba(130, 0, 110, 0.25); 
+  background: rgba(130, 0, 110, 0.25);
 }
 
 /* Style the links inside the navigation bar */
-.topnav a 
-{
+.topnav a {
   display: inline-block;
   color: #ddd;
   text-align: justify;
@@ -47,36 +53,34 @@ img
   font-size: 17.6px;
   margin-left: 13px;
 }
+
 /* Change the color of links on hover */
-.topnav a:hover 
-{
+.topnav a:hover {
   background-color: rgba(221, 221, 221, 0.4);
   color: rgb(130, 0, 110);
 }
+
 /*Add a color to the active/current link */
-.topnav a.active 
-{
+.topnav a.active {
   background-color: #ddd;
   color: rgb(130, 0, 110);
 }
+
 /* Style the list */
-ul.breadcrumb 
-{
+ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
   background-color: rgb(0, 0, 0);
 }
 
 /* Display list items side by side */
-ul.breadcrumb li 
-{
+ul.breadcrumb li {
   display: inline;
   font-size: 18px;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
-ul.breadcrumb li+li:before 
-{
+ul.breadcrumb li+li:before {
   padding: 8px;
   color: rgb(255, 255, 255);
   content: "›";
@@ -84,22 +88,21 @@ ul.breadcrumb li+li:before
 }
 
 /* Add a color to all links inside the list */
-ul.breadcrumb li a 
-{
+ul.breadcrumb li a {
   color: rgb(130, 0, 110);
   text-decoration: none;
 }
 
 /* Add a color on mouse-over */
-ul.breadcrumb li a:hover 
-{
+ul.breadcrumb li a:hover {
   color: rgb(255, 255, 255);
   text-decoration: underline;
 }
-.breadcrumblink
-{
+
+.breadcrumblink {
   color: rgb(100, 20, 125) !important;
 }
+
 footer {
   text-align: center;
   height: 150px;
@@ -147,8 +150,8 @@ footer {
   padding-bottom: 10px;
 }
 
-footer p{
-  color:white;
+footer p {
+  color: white;
   font-size: 20px;
   padding-top: 2px;
 }
@@ -163,7 +166,7 @@ footer p{
   border-color: rgb(130, 0, 110);
   margin-left: 60px;
   margin-right: 60px;
-  
+
 }
 
 .flex-container>div {
@@ -180,16 +183,20 @@ footer p{
     flex-direction: column;
     border: none;
   }
-  .c a .k{
+
+  .c a .k {
     width: 100%;
   }
-  .c a .s{
+
+  .c a .s {
     width: 100%;
   }
-  .c a .b{
+
+  .c a .b {
     width: 100%;
   }
-  .cap{
+
+  .cap {
     padding-bottom: 50px;
   }
 }
@@ -212,7 +219,7 @@ a:visited {
 
 }
 
-.cap{
+.cap {
   color: rgb(0, 52, 130);
   font-size: 20px;
   margin-bottom: 2px;
@@ -236,19 +243,19 @@ a.b:active {
 
 }
 
-.event{
-  color:white;
+.event {
+  color: white;
   font-style: italic;
   font-size: 18px;
-  float:right;
-  margin-right:0px;
-  padding-right:0px;
+  float: right;
+  margin-right: 0px;
+  padding-right: 0px;
   margin-bottom: 40px;
   margin-top: 20px;
 }
 
-.event img{
-  width:12%;
-  height:auto;
-  float:left;
+.event img {
+  width: 12%;
+  height: auto;
+  float: left;
 }

@@ -7,8 +7,9 @@ img {
   padding: 5px;
   width: 400px;
 }
-.Logo img{
-  float:left;
+
+.Logo img {
+  float: left;
 }
 
 /* Add a background color to the top navigation */
@@ -67,12 +68,13 @@ img {
 
 /*Caption*/
 figure {
-  padding: -2px;
+  padding: 0px;
   margin: auto;
 }
 
-.intro{
-  background: linear-gradient(to right, rgb(255, 120, 200), rgb(130, 255, 255));;
+.intro {
+  background: linear-gradient(to right, rgb(255, 120, 200), rgb(130, 255, 255));
+  ;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -97,7 +99,7 @@ figcaption {
   background-color: black;
   color: white;
   font-size: 20px;
-  padding: -2px;
+  padding: 0px;
 }
 
 .flex-container {
@@ -116,10 +118,11 @@ figcaption {
   line-height: 25px;
 }
 
-.flex-container img{
+.flex-container img {
   width: 900px;
 }
-.flex-container video{
+
+.flex-container video {
   width: 900px;
   height: auto;
 }
@@ -128,15 +131,18 @@ figcaption {
   .flex-container {
     flex-direction: column;
   }
-  .flex-container img{
+
+  .flex-container img {
     width: 100%;
   }
-  .flex-container video{
+
+  .flex-container video {
     width: 100%;
   }
-  .jump{
+
+  .jump {
     text-align: right !important;
-   
+
   }
 }
 
@@ -223,32 +229,32 @@ footer {
   padding-bottom: 10px;
 }
 
-footer p{
-  color:white;
+footer p {
+  color: white;
   font-size: 20px;
   padding-top: 2px;
 }
 
-.jump{
+.jump {
   text-align: center;
   font-size: 20px;
   margin-bottom: 45px;
 
 }
 
-.event{
-  color:white;
+.event {
+  color: white;
   font-style: italic;
   font-size: 18px;
-  float:right;
-  margin-right:0px;
-  padding-right:0px;
+  float: right;
+  margin-right: 0px;
+  padding-right: 0px;
   margin-bottom: 40px;
   margin-top: 20px;
 }
 
-.event img{
-  width:12%;
-  height:auto;
-  float:left;
+.event img {
+  width: 12%;
+  height: auto;
+  float: left;
 }
