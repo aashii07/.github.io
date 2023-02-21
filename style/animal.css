@@ -144,6 +144,7 @@ h1 {
 .column img {
   vertical-align: middle;
   width: 100%;
+  /*width:100% !important*/
 
 }
 
@@ -237,6 +238,7 @@ a.city:active {
     width: 100%;
     margin-left: 0px;
   }
+ 
 }
 
 footer {
@@ -315,6 +317,7 @@ footer p {
   height: 100%;
   border:#00000000;
   perspective: 1000px;
+  
 }
 
 .flip-box-inner {
@@ -346,21 +349,29 @@ footer p {
 
 .row{box-sizing: border-box;}
 
-.img-comp-container {
+.img-comp-container{
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  width: 100%;
 }
 
 .img-comp-img {
-  position: absolute;
-  width: auto;
-  height: auto;
-  overflow:hidden;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
+.img-comp-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+
 .img-comp-img img {
-  display:block;
-  /*vertical-align:middle;*/
+  display:block !important;
+  width: 400px;
+ 
 }
 
 .img-comp-slider {
@@ -370,7 +381,10 @@ footer p {
   /*set the appearance of the slider:*/
   width: 40px;
   height: 40px;
-  background-color: #2196F3;
+  background-color: #000000;
   opacity: 0.7;
   border-radius: 50%;
 }
+
+
+

@@ -1,6 +1,5 @@
 body {
-  background-color: rgb(0, 0, 0);
-  transition: 1.5s;
+  transition: 2s;
 }
 
 img {
@@ -12,6 +11,8 @@ img {
 .Logo img {
   float: left;
 }
+
+
 
 /* Add a background color to the top navigation */
 .topnav {
@@ -74,7 +75,7 @@ figure {
 }
 
 .intro {
-  background: linear-gradient(to right, rgb(255, 120, 200), rgb(130, 255, 255));
+  background: linear-gradient(to right, rgb(110, 0, 65), rgb(0, 130, 130));
   ;
   background-clip: text;
   -webkit-background-clip: text;
@@ -97,8 +98,8 @@ h3 {
 }
 
 figcaption {
-  background-color: black;
-  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 0, 0);
   font-size: 20px;
   padding: 0px;
 }
@@ -107,11 +108,12 @@ figcaption {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  
 }
 
 .flex-container>div {
-  background-color: #000000;
+  background-color: #00000000;
   width: 100%;
   margin: 10px;
   text-align: center;
@@ -151,7 +153,7 @@ figcaption {
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Display list items side by side */
@@ -244,7 +246,7 @@ footer p {
 }
 
 .event {
-  color: white;
+  color: rgb(0, 0, 0);
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -260,33 +262,65 @@ footer p {
   float: left;
 }
 
-.night-toggle {
-  width: 10px;
-  height: 10px;
-  right: 20px;
-  top: 20px;
-  position: absolute;
+:root,
+:root.light {
+  --bg-color: url(../gallery/theme.jpg);
+  --text-color: #000000;
+
+}
+:root.dark {
+  --bg-color: url(../gallery/black.jpg);
+  --text-color: #ddd;
   
-  }
-  .night-toggle:hover{
+}
+
+body {
+ 
+  background-image: var(--bg-color);
+  
+}
+figcaption{
+  color: var(--text-color);
+}
+.event{
+  color: var(--text-color);
+}
+
+
+.toggle-container {
+
+  position: absolute;
+  margin-top: 0.5%;
+  margin-left: 93%;
+
+}
+
+.theme-btn {
+  width: 6em;
+  height: 6em;
+  padding: 0.5em;
+  border-radius: 50%;
   cursor: pointer;
-  }
-  .moon {
+  border: none;
   background-color: transparent;
-  box-shadow: -6px 1px 0 3px #275e8e;
-  border-left:3px solid #27476D;
-  border-radius:50%;
-  width: 20px;
-  height: 20px;
-  margin-left:8px;
-  margin-top:0px;
-  transition: 2s;
-  }
-  .sun {
-  background-color: #fdd462;
-  box-shadow: 2px 0px 0px 1px #D19C29;
-  border-radius:50%;
-  width: 26px;
-  height: 26px;
-  transition: 2s;
-  }
+}
+
+.theme-btn img {
+  height: 50%;
+  width: 50%;
+  object-fit: cover;
+}
+
+.theme-btn.light {
+  display: none;
+}
+
+.dark .theme-btn.dark {
+  display: none;
+}
+
+.dark .theme-btn.light {
+  display: block;
+}
+
+

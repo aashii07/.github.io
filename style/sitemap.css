@@ -349,6 +349,7 @@ h1 {
 
 .toggle-container {
   position: relative;
+  position: fixed
 }
 
 .theme-btn {
@@ -379,7 +380,6 @@ h1 {
   display: block;
 }
 
-
 .flex-container {
   display: flex;
   justify-content: center;
@@ -390,3 +390,6 @@ h1 {
   padding: 20px;
 }
 
+.button{
+  position: fixed
+}
