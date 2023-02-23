@@ -311,85 +311,10 @@ footer p {
   float: left;
 }
 
-:root,
-:root.light {
-  --bg-color: #fff;
-  --text-color: #123;
-}
-
-:root.dark {
-  --bg-color: #121212;
-  --text-color: #45ADFE;
-}
-
 body {
-  margin: 0;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: 'Inter', sans-serif
+  background-color: black;
 }
 
-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 5.0 rem 0;
-  height: 100vh;
-  box-sizing: border-box;
-}
-
-h1 {
-  text-align: center;
-  font-weight: normal;
-}
-
-.toggle-container {
-  position: relative;
-  position: fixed
-}
-
-.theme-btn {
-  width: 6em;
-  height: 6em;
-  padding: 0.5em;
-  border-radius: 50%;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-}
-
-.theme-btn img {
-  height: 50%;
-  width: 50%;
-  object-fit: cover;
-}
-
-.theme-btn.light {
-  display: none;
-}
-
-.dark .theme-btn.dark {
-  display: none;
-}
-
-.dark .theme-btn.light {
-  display: block;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-}
-
-.flex-container > div {
-  margin: 10px;
-  padding: 20px;
-}
-
-.button{
-  position: fixed
+.second-background {
+  background-image: url('../gallery/theme.jpg');
 }

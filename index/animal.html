@@ -3,12 +3,21 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="../style/animal.css" />
+    <script type="text/JavaScript" src="../js/category.js"></script>
     <script type="text/JavaScript" src="../js/animal.js"></script>
+    <script type="text/JavaScript" src="../js/all.js"></script>
     <meta charset="utf-8">
     <title>Perfect Click</title>
 </head>
 
 <body>
+    <script src="../js/all.js"></script>
+    <script>
+      // Call the checkBackgroundPreference function when the DOM is ready
+      document.addEventListener("DOMContentLoaded", function() {
+        checkBackgroundPreference();
+      });
+    </script>
     <p>
     <div class="Logo">
         <img src="../gallery/logo.jpg">
@@ -88,24 +97,35 @@
 
         </div>
         <div class="column">
-            <img src="../gallery/puppy.jpg" alt="puppy" style="width:100%">
+            <img src="../gallery/pet.jpg" alt="puppy" style="width:100%">
             <img src="../gallery/squirrel.jpg" alt="squirrel" style="width:100%">
             
            
         </div>
         <div class="column">
             <img src="../gallery/deer.jpg" alt="deer" style="width:100%">
-            <img src="../gallery/koala.jpg" alt="koala" style="width:100%">
-            <img src="../gallery/pet.jpg" alt="pet" style="width:100%">
+            
+            <div class="flip-box1">
+                <div class="flip-box-inner1">
+                  <div class="flip-box-front1">
+                        <img src="../gallery/koala.jpg" alt="koala" style="width:100%">
+                  </div>
+                  <div class="flip-box-back1">
+                        <img src="../gallery/koalababy.jpeg" alt="koalababy" style="width:100%">
+                  </div>
+                </div>
+            </div>
+            
+            <img src="../gallery/puppy.jpg" alt="pet" style="width:100%">
 
         </div>
         <div class="column">
             <div class="img-comp-container">
                 <div class="img-comp-img">
-                  <img src="../gallery/elephant.jpg" alt="elephant" width="400" height="600">
+                  <img src="../gallery/elephant.jpg" alt="elephant">
                 </div>
                 <div class="img-comp-img img-comp-overlay">
-                  <img src="../gallery/babyelephant.jpg" alt="babyelephant" width="400" height="600">
+                  <img src="../gallery/babyelephant.jpg" alt="babyelephant">
                 </div>
               </div>
               
@@ -118,7 +138,7 @@
         
     </div>
     
-    <br><br>
+    <br><br><br>
 </body>
 <footer>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

@@ -601,3 +601,11 @@ footer p {
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 1px black, 0 0 5px rgb(76, 225, 255);
 }
+
+body {
+  background-color: black;
+}
+
+.second-background {
+  background-image: url('../gallery/theme.jpg');
+}

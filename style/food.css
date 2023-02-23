@@ -307,3 +307,121 @@ footer p {
   height: auto;
   float: left;
 }
+
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+ 
+  border:#00000000;
+  perspective: 1000px;
+  margin-bottom: 69%;
+  
+}
+
+.flip-box-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-back {
+  transform: rotateX(180deg);
+}
+
+
+.flip-box1 {
+  background-color: transparent;
+  width: 100%;
+  height: 0;
+  border:#00000000;
+  perspective: 1000px;
+  margin-bottom: 180%;
+}
+
+.flip-box-inner1 {
+ 
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box1:hover .flip-box-inner1 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front1, .flip-box-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+
+
+.flip-box-back1 {
+ 
+  transform: rotateY(180deg);
+}
+
+
+
+.row{box-sizing: border-box;}
+
+.img-comp-container{
+  position: relative;
+  width: 100%;
+}
+
+.img-comp-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.img-comp-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+
+.img-comp-img img {
+  display:block !important;
+  width: 400px;
+  height: 275px;
+ 
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+body {
+  background-color: black;
+}
+
+.second-background {
+  background-image: url('../gallery/theme.jpg');
+}

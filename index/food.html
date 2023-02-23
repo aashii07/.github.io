@@ -3,11 +3,21 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="../style/food.css" />
+    <script type="text/JavaScript" src="../js/category.js"></script>
+    <script type="text/JavaScript" src="../js/food.js"></script>
+    <script type="text/JavaScript" src="../js/all.js"></script>
     <meta charset="utf-8">
     <title>Perfect Click</title>
 </head>
 
 <body>
+    <script src="../js/all.js"></script>
+    <script>
+      // Call the checkBackgroundPreference function when the DOM is ready
+      document.addEventListener("DOMContentLoaded", function() {
+        checkBackgroundPreference();
+      });
+    </script>
     <p>
     <div class="Logo">
         <img src="../gallery/logo.jpg" alt="logo">
@@ -71,7 +81,17 @@
     <!-- Photo Grid -->
     <div class="row">
         <div class="column">
-            <img src="../gallery/freakshake.jpg" alt="Freakshake" style="width:100%">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../gallery/freakshake.jpg" alt="Freakshake" style="width:100%">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../gallery/cocktail.jpg" alt="cocktail" style="width:100%">
+                    </div>
+                </div>
+            </div>
+           
             <img src="../gallery/indian.jpg" alt="Indian" style="width:100%">
 
 
@@ -82,11 +102,37 @@
         </div>
         <div class="column">
             <img src="../gallery/sushi.jpg" alt="Sushi" style="width:100%">
-            <img src="../gallery/burger.jpg" alt="Burger" style="width:100%">
 
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="../gallery/bburger.jpg" alt="Burger" style="width: 650; height: 450;">
+
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                  <img src="../gallery/burger.jpg" alt="Burger" style="width: 650; height: 450;">
+                </div>
+            </div>
+            <script>
+                /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+                initComparisons()
+                </script>
+            
 
         </div>
-        <img src="../gallery/pizza.jpg" alt="Pizza" style="width:100%">
+        <div class="column">
+            <div class="flip-box1">
+                <div class="flip-box-inner1">
+                  <div class="flip-box-front1">
+                    <img src="../gallery/pizza.jpg" alt="Pizza" style="width:100%">
+                  </div>
+                  <div class="flip-box-back1">
+                        <img src="../gallery/hot.jpg" alt="Pizza" style="width:100%">
+                  </div>
+                </div>
+            </div>
+            
+
+        </div>
     </div>
     <br><br>
 </body>

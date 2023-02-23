@@ -12,8 +12,6 @@ img {
   float: left;
 }
 
-
-
 /* Add a background color to the top navigation */
 .topnav {
   /*position: fixed;*/
@@ -263,17 +261,16 @@ footer p {
 }
 
 :root,
-:root.light {
-  --bg-color: url(../gallery/theme.jpg);
-  --text-color: #000000;
-
-}
 :root.dark {
   --bg-color: url(../gallery/black.jpg);
   --text-color: #ddd;
   
 }
+:root.light {
+  --bg-color: url(../gallery/theme.jpg);
+  --text-color: #000000;
 
+}
 body {
  
   background-image: var(--bg-color);
@@ -323,4 +320,10 @@ figcaption{
   display: block;
 }
 
+body {
+  background-color: black;
+}
 
+.second-background {
+  background-image: url('../gallery/theme.jpg');
+}

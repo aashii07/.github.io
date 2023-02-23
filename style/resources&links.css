@@ -232,3 +232,11 @@ footer p {
   height: auto;
   float: left;
 }
+
+body {
+  background-color: black;
+}
+
+.second-background {
+  background-image: url('../gallery/theme.jpg');
+}

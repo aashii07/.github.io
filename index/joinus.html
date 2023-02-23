@@ -4,11 +4,19 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../style/joinus.css" />
     <script type="text/JavaScript" src="../js/joinus.js"></script>
+    <script type="text/JavaScript" src="../js/all.js"></script>
     <meta charset="utf-8">
     <title>Perfect Click</title>
 </head>
 
 <body>
+    <script src="../js/all.js"></script>
+    <script>
+      // Call the checkBackgroundPreference function when the DOM is ready
+      document.addEventListener("DOMContentLoaded", function() {
+        checkBackgroundPreference();
+      });
+    </script>
     <p>
     <div class="Logo">
         <img src="../gallery/logo.jpg" alt="logo">
@@ -61,7 +69,7 @@
                     </div>
                     <div id="rightDiv2">
                         <label for="phone">Phone Number</label>
-                        <input type="text" pattern="[5]{1}[0-9]{7}" placeholder="Enter phone number" name="phone"
+                        <input type="text" placeholder="Enter phone number" name="phone"
                             id="phone">
                     </div>
                 </div>
@@ -227,15 +235,15 @@
                     <p>Gender</p>
                     <label class="gender">
 
-                        <input type="radio" name="gender" checked="checked">Male
+                        <input type="radio" name="gender" checked="checked" value="Male">Male
                         <span class="checkmark"></span>
                     </label>
                     <label class="gender">
-                        <input type="radio" name="gender">Female
+                        <input type="radio" name="gender" value="Female">Female
                         <span class="checkmark"></span>
                     </label>
                     <label class="gender">
-                        <input type="radio" name="gender">Other
+                        <input type="radio" name="gender" value="Öther">Other
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -245,19 +253,19 @@
                 <p>Where did you hear about us?<br></p>
 
                 <label class="CheckBox">Social media
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox" checked="checked" id="1" value="Social media">
                     <span class="check"></span>
                 </label>
                 <label class="CheckBox">Google
-                    <input type="checkbox">
+                    <input type="checkbox" id="2" value="Google">
                     <span class="check"></span>
                 </label>
                 <label class="CheckBox">Friend or colleague
-                    <input type="checkbox">
+                    <input type="checkbox" id="3" value="Friend or colleague">
                     <span class="check"></span>
                 </label>
                 <label class="CheckBox">Other
-                    <input type="checkbox">
+                    <input type="checkbox" id="4" value="Other">
                     <span class="check"></span>
                 </label>
 
