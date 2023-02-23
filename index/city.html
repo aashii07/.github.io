@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="../style/city.css" />
-    <script type="text/JavaScript" src="../js/city.js"></script>
+    <script type="text/JavaScript" src="../js/category.js"></script>
     <script type="text/JavaScript" src="../js/all.js"></script>
     <meta charset="utf-8">
     <title>Perfect Click</title>
@@ -80,7 +80,17 @@
     <!-- Photo Grid -->
     <div class="row">
         <div class="column">
-            <img src="../gallery/city.jpg" alt="city image" style="width:100%">
+            <div class="flip-box1">
+                <div class="flip-box-inner1">
+                  <div class="flip-box-front1">
+                        <img src="../gallery/city.jpg" alt="city street" style="width:100%">
+                  </div>
+                  <div class="flip-box-back1">
+                        <img src="../gallery/rainy.jpg" alt="city" style="width:100%">
+                  </div>
+                </div>
+            </div>
+            
 
 
         </div>
@@ -91,15 +101,39 @@
 
         </div>
         <div class="column">
-            <img src="../gallery/dubai.jpg" alt="duabi" style="width:100%">
+
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                  <img src="../gallery/dubai.jpg" alt="Dubai">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                  <img src="../gallery/fog.jpg" alt="Dubai">
+                </div>
+              </div>
+              
+              <script>
+              /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+              initComparisons()
+              </script>
+            
+            
             <img src="../gallery/road.png" alt="road" style="width:100%">
 
 
 
         </div>
         <div class="column">
-
-            <img src="../gallery/tree.jpg" alt="tree" style="width:100%">
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../gallery/tree.jpg" alt="City lake" style="width:100%">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../gallery/snow.jpg" alt="Snow" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            
 
         </div>
     </div>

@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="../style/people.css" />
-    <script type="text/JavaScript" src="../js/joinus.js"></script>
+    <script type="text/JavaScript" src="../js/category.js"></script>
     <script type="text/JavaScript" src="../js/all.js"></script>
     <meta charset="utf-8">
     <title>Perfect Click</title>
@@ -81,8 +81,17 @@
     <div class="row">
         <div class="column">
             <img src="../gallery/birthday.jpg" alt="birthday" style="width:100%">
-            <img src="../gallery/proposal.jpg" alt="proposol" style="width:100%">
-
+            <div class="flip-box">
+                <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                        <img src="../gallery/proposal.jpg" alt="proposal" style="width:100%">
+                    </div>
+                    <div class="flip-box-back">
+                        <img src="../gallery/wedding.jpg" alt="wedding" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            
         </div>
         <div class="column">
             <img src="../gallery/girl.jpg" alt="girl" style="width:100%">
@@ -91,15 +100,37 @@
 
         </div>
         <div class="column">
-            <img src="../gallery/baby.jpg" alt="baby" style="width:100%">
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                  <img src="../gallery/baby.jpg" alt="baby">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                  <img src="../gallery/babygirl.jpg" alt="baby">
+                </div>
+            </div>
+              
+            <script>
+            /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+            initComparisons()
+            </script>
+            
             <img src="../gallery/sea.jpg" alt="sea" style="width:100%">
 
 
 
         </div>
         <div class="column">
-
-            <img src="../gallery/smoke.jpg" alt="smoke" style="width:100%">
+            <div class="flip-box1">
+                <div class="flip-box-inner1">
+                  <div class="flip-box-front1">
+                        <img src="../gallery/smoke.jpg" alt="smoke" style="width:100%">
+                  </div>
+                  <div class="flip-box-back1">
+                        <img src="../gallery/color.jpg" alt="color" style="width:100%">
+                  </div>
+                </div>
+            </div>
+            
 
         </div>
     </div>
