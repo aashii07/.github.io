@@ -162,6 +162,25 @@ function checkBackgroundPreference() {
   }
 }*/
 
+/*function toggleBackground() {
+  const body = document.querySelector("body");
+  const icon = document.querySelector("button img"); // get the icon element
+
+  if (isSecondBackground) 
+  {
+    body.classList.remove("second-background");
+    localStorage.setItem("backgroundPreference", "default"); // set background preference to default
+    icon.src = "../gallery/s.png";// change icon to sun
+  } else 
+  {
+    body.classList.add("second-background");
+    localStorage.setItem("backgroundPreference", "second"); // set background preference to second
+    icon.src = "../gallery/moon.png"; // change icon to moon
+  }
+  
+  isSecondBackground = !isSecondBackground;
+}*/
+
 function toggleBackground() {
   const body = document.querySelector("body");
   const icon = document.querySelector("button img"); // get the icon element

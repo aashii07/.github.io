@@ -609,3 +609,60 @@ body {
 .second-background {
   background-image: url('../gallery/theme.jpg');
 }
+
+.Agree  {
+  color: white;
+  padding-right: 35px;
+}
+
+.Agree  {
+  display: block;
+  position: relative;
+  padding-left: 120px;
+  padding-right: 50px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+
+}
+
+/* Hide the browser's default checkbox */
+.Agree  input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* On mouse-over, add a grey background color */
+.Agree:hover input~.check {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.Agree  input:checked~.check {
+  background-color: #2195f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.Agree:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.Agree input:checked~.check:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.Agree input:checked~.check:after {
+  left: 9px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  content: "✔";
+}

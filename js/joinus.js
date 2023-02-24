@@ -8,7 +8,8 @@ function validateform() {
     var month = document.getElementById("m").value;
     var year = document.getElementById("y").value;
     var gender = document.querySelector('input[name="gender"]:checked').value;
-    
+    var message = document.getElementById("message").value;
+
 
     if (fname == null || fname == "") {
         alert("First Name can't be blank");
@@ -42,19 +43,43 @@ function validateform() {
         alert("Address can't be blank");
         return false;
     }
-    if (myform.Checkbox.checked == false) {
+    if (myform.Agree.checked == false) {
         alert('You must agree to the terms and conditions first!');
         return false;
     }
-    localStorage.setItem('fname', fname.value);
-    localStorage.setItem('lname', lname.value);
-    localStorage.setItem('email', emailID.value);
-    localStorage.setItem('phone', phone.value);
-    localStorage.setItem('address', address.value);
-    localStorage.setItem("day", day);
-    localStorage.setItem("month", month);
-    localStorage.setItem("year", year);
-    localStorage.setItem("gender", gender);
+    localStorage.setItem('fname', fname);
+    localStorage.setItem('lname', lname);
+    localStorage.setItem('email', emailID);
+    localStorage.setItem('phone', phone);
+    localStorage.setItem('address', address);
+    localStorage.setItem('day', day);
+    localStorage.setItem('month', month);
+    localStorage.setItem('year', year);
+    localStorage.setItem('gender', gender);
+    localStorage.setItem('message', message);
+
+
+    var checkboxes = document.getElementsByName("myCheckboxes");
+
+    for (var i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].addEventListener("click", function() {
+          var checkboxValues = "";
+      
+          for (var j = 0; j < checkboxes.length; j++) {
+            if (checkboxes[j].checked) {
+              checkboxValues += checkboxes[j].id + ",";
+            }
+          }
+      
+          // remove the trailing comma
+          checkboxValues = checkboxValues.slice(0, -1);
+      
+          localStorage.setItem("myCheckboxValues", checkboxValues);
+          
+          // alert the selected values
+          alert("Selected values: " + checkboxValues);
+        });
+      }
 
     //window.location.href = "#popup1";
 }

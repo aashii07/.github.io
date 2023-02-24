@@ -96,8 +96,8 @@ h3 {
 }
 
 figcaption {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
   font-size: 20px;
   padding: 0px;
 }
@@ -244,7 +244,7 @@ footer p {
 }
 
 .event {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -258,38 +258,6 @@ footer p {
   width: 12%;
   height: auto;
   float: left;
-}
-
-:root,
-:root.dark {
-  --bg-color: url(../gallery/black.jpg);
-  --text-color: #ddd;
-  
-}
-:root.light {
-  --bg-color: url(../gallery/theme.jpg);
-  --text-color: #000000;
-
-}
-body {
- 
-  background-image: var(--bg-color);
-  
-}
-figcaption{
-  color: var(--text-color);
-}
-.event{
-  color: var(--text-color);
-}
-
-
-.toggle-container {
-
-  position: absolute;
-  margin-top: 0.5%;
-  margin-left: 93%;
-
 }
 
 .theme-btn {
@@ -308,20 +276,9 @@ figcaption{
   object-fit: cover;
 }
 
-.theme-btn.light {
-  display: none;
-}
-
-.dark .theme-btn.dark {
-  display: none;
-}
-
-.dark .theme-btn.light {
-  display: block;
-}
-
 body {
   background-color: black;
+
 }
 
 .second-background {

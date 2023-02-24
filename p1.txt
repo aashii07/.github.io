@@ -2,21 +2,13 @@ responsive - about us video
 
 customise button in home page for theme
 
-validate form
--required format
--no empty field
-
 When user clicks submit and all information are valid, a confirm box
 will show all information entered by user and the user must confirm
 his information by clicking OK button.
 
-gallery
+local storage 
 
-
-
-
-
-
+about us names local storage
 
 
 
