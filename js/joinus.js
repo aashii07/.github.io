@@ -9,6 +9,10 @@ function validateform() {
     var year = document.getElementById("y").value;
     var gender = document.querySelector('input[name="gender"]:checked').value;
     var message = document.getElementById("message").value;
+    var checkbox1 = document.getElementById("1");
+    var checkbox2 = document.getElementById("2");
+    var checkbox3 = document.getElementById("3");
+    var checkbox4 = document.getElementById("4");
 
 
     if (fname == null || fname == "") {
@@ -59,7 +63,7 @@ function validateform() {
     localStorage.setItem('message', message);
 
 
-    var checkboxes = document.getElementsByName("myCheckboxes");
+    /*var checkboxes = document.getElementsByName("myCheckboxes");
 
     for (var i = 0; i < checkboxes.length; i++) {
         checkboxes[i].addEventListener("click", function() {
@@ -79,8 +83,29 @@ function validateform() {
           // alert the selected values
           alert("Selected values: " + checkboxValues);
         });
-      }
-
+    }*/
+  
+    // Initialize an empty array to store selected checkboxes
+    let selectedCheckboxes = [];
+    // Check which checkboxes are currently checked
+    if (checkbox1.checked) {
+      selectedCheckboxes.push(checkbox1.value);
+    }
+    if (checkbox2.checked) {
+      selectedCheckboxes.push(checkbox2.value);
+    }
+    if (checkbox3.checked) {
+      selectedCheckboxes.push(checkbox3.value);
+    }
+    if (checkbox4.checked) {
+        selectedCheckboxes.push(checkbox4.value);
+    }
+    // Convert the array to a JSON string
+    const selectedCheckboxesJSON = JSON.stringify(selectedCheckboxes);
+    // Store the JSON string in local storage
+    localStorage.setItem("selectedCheckboxes", selectedCheckboxesJSON);
+    
+    alert(selectedCheckboxes);
     //window.location.href = "#popup1";
 }
 
