@@ -62,51 +62,89 @@ function validateform() {
     localStorage.setItem('gender', gender);
     localStorage.setItem('message', message);
 
-
-    /*var checkboxes = document.getElementsByName("myCheckboxes");
-
-    for (var i = 0; i < checkboxes.length; i++) {
-        checkboxes[i].addEventListener("click", function() {
-          var checkboxValues = "";
-      
-          for (var j = 0; j < checkboxes.length; j++) {
-            if (checkboxes[j].checked) {
-              checkboxValues += checkboxes[j].id + ",";
-            }
-          }
-      
-          // remove the trailing comma
-          checkboxValues = checkboxValues.slice(0, -1);
-      
-          localStorage.setItem("myCheckboxValues", checkboxValues);
-          
-          // alert the selected values
-          alert("Selected values: " + checkboxValues);
-        });
-    }*/
-  
     // Initialize an empty array to store selected checkboxes
     let selectedCheckboxes = [];
     // Check which checkboxes are currently checked
     if (checkbox1.checked) {
-      selectedCheckboxes.push(checkbox1.value);
+        selectedCheckboxes.push(checkbox1.value);
     }
     if (checkbox2.checked) {
-      selectedCheckboxes.push(checkbox2.value);
+        selectedCheckboxes.push(checkbox2.value);
     }
     if (checkbox3.checked) {
-      selectedCheckboxes.push(checkbox3.value);
+        selectedCheckboxes.push(checkbox3.value);
     }
     if (checkbox4.checked) {
         selectedCheckboxes.push(checkbox4.value);
     }
+
     // Convert the array to a JSON string
     const selectedCheckboxesJSON = JSON.stringify(selectedCheckboxes);
     // Store the JSON string in local storage
     localStorage.setItem("selectedCheckboxes", selectedCheckboxesJSON);
-    
-    alert(selectedCheckboxes);
-    //window.location.href = "#popup1";
+    // Create an object to store the form values
+    let formValues = { fname: fname, lname: lname };
+    // Get the existing past form values from local storage, or create an empty array
+    let pastFormValues = JSON.parse(localStorage.getItem("pastFormValues")) || [];
+    // Add the new form values object to the array
+    pastFormValues.push(formValues);
+    // Save the updated array of past form values to local storage
+    localStorage.setItem("pastFormValues", JSON.stringify(pastFormValues));
+
+    // Construct the message to display in the popup
+    var popupMessage = "First Name: " + fname + "\n" +
+        "Last Name: " + lname + "\n" +
+        "Email: " + emailID + "\n" +
+        "Phone: " + phone + "\n" +
+        "Address: " + address + "\n" +
+        "Birth Date: " + day + "/" + month + "/" + year + "\n" +
+        "Gender: " + gender + "\n" +
+        "Where you heard about us: " + selectedCheckboxes + "\n" +
+        "Message: " + message + "\n";
+
+    // Display the message in a popup
+    /*var confirmed = confirm(popupMessage);
+
+    // If the user confirmed, submit the form
+    if (confirmed) {
+        document.myform.submit();
+    }*/
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the <span> element that closes the modal
+    var closeBtn = document.getElementsByClassName("close")[0];
+
+    // Get the message and confirm button elements
+    var modalMessage = document.getElementById("modal-message");
+    var modalConfirm = document.getElementById("modal-confirm");
+
+
+    // Set the message in the modal dialog
+    modalMessage.innerHTML = popupMessage;
+
+    // Display the modal
+    modal.style.display = "block";
+
+    // When the user clicks on <span> (x), close the modal
+    /*closeBtn.onclick = function () {
+        modal.style.display = "none";
+    };*/
+
+    // When the user clicks anywhere outside of the modal, close it
+    /*window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };*/
+
+    // When the user clicks the confirm button, submit the form
+    modalConfirm.onclick = function () {
+        modal.style.display = "none";
+        document.myform.submit();
+    };
+
 }
 
 function validateFirstname(fname) {
@@ -153,4 +191,5 @@ function validatePhone(phone) {
     }
     return (true);
 }
+
 

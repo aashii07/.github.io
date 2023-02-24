@@ -70,7 +70,7 @@ img {
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Display list items side by side */
@@ -82,7 +82,7 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: rgb(255, 255, 255);
+  color: rgb(130, 0, 110);
   content: "›";
   font-size: 1.2em;
 }
@@ -95,7 +95,7 @@ ul.breadcrumb li a {
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(100, 20, 125);
   text-decoration: underline;
 }
 
@@ -125,9 +125,7 @@ h1 a {
   text-decoration: none;
 }
 
-h2 a {
-  color: white;
-}
+
 
 h3 a {
   color: rgba(68, 173, 234, 0.4);
@@ -136,11 +134,11 @@ h3 a {
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .flex-container>div {
-  background-color: #000000;
+  background-color: #00000000;
   width: 100%;
   margin: 0px;
   text-align: center;
@@ -173,7 +171,7 @@ ul {
   margin: 0;
 }
 
-li::before {
+h3 li::before {
   content: "»";
   padding-right: 4px;
 }
@@ -295,7 +293,7 @@ footer p {
 }
 
 .event {
-  color: white;
+  
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -313,8 +311,12 @@ footer p {
 
 body {
   background-color: black;
+  color: rgb(255, 255, 255);
+  
 }
 
 .second-background {
   background-image: url('../gallery/theme.jpg');
+  color: #000000;
+ 
 }

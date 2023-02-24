@@ -1,6 +1,4 @@
-body {
-  transition: 2s;
-}
+
 
 img {
   border-radius: 3px;
@@ -85,6 +83,8 @@ figure {
   line-height: 30px;
   margin-top: 50px;
   margin-bottom: 70px;
+  position: relative;
+  top: -50px;
 }
 
 h3 {
@@ -97,7 +97,6 @@ h3 {
 
 figcaption {
   background-color: rgba(255, 255, 255, 0);
-  color: rgb(255, 255, 255);
   font-size: 20px;
   padding: 0px;
 }
@@ -152,6 +151,9 @@ ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
   background-color: rgba(0, 0, 0, 0);
+  margin-top: 0;
+  margin-bottom: 0;
+ 
 }
 
 /* Display list items side by side */
@@ -163,7 +165,7 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: rgb(255, 255, 255);
+  color: rgb(130, 0, 110);
   content: "/\00a0";
 }
 
@@ -175,7 +177,7 @@ ul.breadcrumb li a {
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(100, 20, 125);
   text-decoration: underline;
 }
 
@@ -237,14 +239,15 @@ footer p {
 }
 
 .jump {
-  text-align: center;
+  text-align: center ;
   font-size: 20px;
   margin-bottom: 45px;
-
+  position: relative;
+  top: -26px;
 }
 
 .event {
-  color: rgb(255, 255, 255);
+  
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -274,13 +277,47 @@ footer p {
   height: 50%;
   width: 50%;
   object-fit: cover;
+
 }
 
 body {
   background-color: black;
-
+  color: rgb(255, 255, 255);
+  
 }
 
 .second-background {
   background-image: url('../gallery/theme.jpg');
+  color: #000000;
+ 
 }
+
+/* Default styles */
+.jump {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jump a {
+  margin: 0 5px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1050px) {
+  .jump-container {
+    display: block;
+    text-align: center;
+  }
+
+  .jump a {
+    display: block;
+    margin: 5px auto;
+  }
+}
+
+
+
+
+
+

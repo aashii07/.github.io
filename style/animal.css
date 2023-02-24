@@ -20,7 +20,7 @@ img {
   background: linear-gradient(to right, red, blue);
   white-space: nowrap;
   overflow: auto;
-  font-size: 33px;
+  font-size: 200%;
 
 }
 
@@ -71,7 +71,7 @@ img {
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Display list items side by side */
@@ -83,7 +83,7 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: rgb(255, 255, 255);
+  color: rgb(130, 0, 110);
   content: "›";
   font-size: 1.2em;
 }
@@ -96,7 +96,7 @@ ul.breadcrumb li a {
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(100, 20, 125);
   text-decoration: underline;
 }
 
@@ -199,7 +199,7 @@ a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 60px;
+  font-size: 300%;
 
 }
 
@@ -228,14 +228,14 @@ a.city:active {
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   .r {
     flex-direction: column;
   }
 
   .c a:link,
   a:visited {
-    font-size: 40px;
+    font-size: 200%;
   }
 
   h1 {
@@ -303,7 +303,7 @@ footer p {
 }
 
 .event {
-  color: white;
+  
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -432,8 +432,12 @@ footer p {
 
 body {
   background-color: black;
+  color: rgb(255, 255, 255);
+  
 }
 
 .second-background {
   background-image: url('../gallery/theme.jpg');
+  color: #000000;
+ 
 }

@@ -70,7 +70,7 @@ img {
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Display list items side by side */
@@ -82,7 +82,7 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: rgb(255, 255, 255);
+  color: rgb(130, 0, 110);
   content: "›";
   font-size: 1.2em;
 }
@@ -95,7 +95,7 @@ ul.breadcrumb li a {
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(100, 20, 125);
   text-decoration: underline;
 }
 
@@ -175,15 +175,17 @@ footer p {
 }
 
 .text p {
-  color: white;
+
   text-align: center;
-  font-size: 20px;
+  font-size: 23px;
   line-height: 40px;
   margin-top: 0px;
   margin-right: 30px;
 
 
 }
+
+
 
 .text h1 {
   font-size: 50px;
@@ -195,6 +197,8 @@ footer p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
 
 .p img {
   width: 850px;
@@ -237,7 +241,6 @@ footer p {
 }
 
 .event {
-  color: white;
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -253,13 +256,7 @@ footer p {
   float: left;
 }
 
-body {
-  background-color: black;
-}
 
-.second-background {
-  background-image: url('../gallery/theme.jpg');
-}
 
 @media (min-width: 1000px) {
   .p {
@@ -285,11 +282,11 @@ body {
 .fb {
   display: flex;
   flex-wrap: nowrap;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .fb>div {
-  background-color: #000000;
+  background-color: #00000000;
   width: 100%;
   text-align: center;
 }
@@ -308,22 +305,17 @@ body {
   }
 }
 
-.text p {
-  margin-top: 0px;
-  color: white;
-  text-align: center;
-  font-size: 23px;
-  line-height: 35px;
 
+
+
+body {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  
 }
 
-.text h1 {
-  font-size: 50px;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
-  background: -webkit-linear-gradient(to right, green 30%, yellow);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.second-background {
+  background-image: url('../gallery/theme.jpg');
+  color: #000000;
+ 
 }

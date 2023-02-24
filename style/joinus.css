@@ -70,7 +70,7 @@ img {
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Display list items side by side */
@@ -82,7 +82,7 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: rgb(255, 255, 255);
+  color: rgb(130, 0, 110);
   content: "›";
   font-size: 1.2em;
 }
@@ -95,7 +95,7 @@ ul.breadcrumb li a {
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(100, 20, 125);
   text-decoration: underline;
 }
 
@@ -515,7 +515,7 @@ footer p {
 }
 
 .event {
-  color: white;
+  
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -604,10 +604,14 @@ footer p {
 
 body {
   background-color: black;
+  color: rgb(255, 255, 255);
+  
 }
 
 .second-background {
   background-image: url('../gallery/theme.jpg');
+  color: #000000;
+ 
 }
 
 .Agree  {
@@ -666,3 +670,57 @@ body {
   margin-left: 5px;
   content: "✔";
 }
+
+/* The modal dialog */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Confirm button */
+#modal-confirm {
+  display: block;
+  margin: 10px auto 0;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#modal-confirm:hover {
+  background-color: #3e8e41;
+}
+

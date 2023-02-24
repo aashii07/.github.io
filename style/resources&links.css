@@ -66,7 +66,7 @@ img {
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* Display list items side by side */
@@ -78,7 +78,7 @@ ul.breadcrumb li {
 /* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li+li:before {
   padding: 8px;
-  color: rgb(255, 255, 255);
+  color: rgb(130, 0, 110);
   content: "›";
   font-size: 1.2em;
 }
@@ -91,7 +91,7 @@ ul.breadcrumb li a {
 
 /* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(100, 20, 125);
   text-decoration: underline;
 }
 
@@ -142,7 +142,7 @@ h3 {
 @media (max-width: 1080px) {
   .flex-container {
     flex-direction: column;
-    background-color: #000000;
+    background-color: #00000000;
   }
 }
 
@@ -217,7 +217,7 @@ footer p {
 }
 
 .event {
-  color: white;
+ 
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -235,8 +235,12 @@ footer p {
 
 body {
   background-color: black;
+  color: rgb(255, 255, 255);
+  
 }
 
 .second-background {
   background-image: url('../gallery/theme.jpg');
+  color: #000000;
+ 
 }
