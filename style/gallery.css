@@ -377,7 +377,7 @@ input[type="text"] {
 }
 
 .event {
-  
+
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -396,11 +396,11 @@ input[type="text"] {
 body {
   background-color: black;
   color: rgb(255, 255, 255);
-  
+
 }
 
 .second-background {
   background-image: url('../gallery/theme.jpg');
   color: #000000;
- 
+
 }

@@ -12,10 +12,10 @@
 <body>
     <script src="../js/all.js"></script>
     <script>
-      // Call the checkBackgroundPreference function when the DOM is ready
-      document.addEventListener("DOMContentLoaded", function() {
-        checkBackgroundPreference();
-      });
+        // Call the checkBackgroundPreference function when the DOM is ready
+        document.addEventListener("DOMContentLoaded", function () {
+            checkBackgroundPreference();
+        });
     </script>
     <p>
     <div class="Logo">
@@ -23,7 +23,7 @@
     </div>
     <div class="event">
         <span><img src="../gallery/day.png" alt="Friday" class="resize"></span>&emsp;
-        <span><br>20/01/2023: Get More from Your Camera<br>27/01/2023: FREE Photography Workshop </span>
+        <span><br>10/03/2023: Get More from Your Camera<br>24/03/2023: FREE Photography Workshop </span>
 
     </div>
     </p>
@@ -55,28 +55,27 @@
                 <div id="parentDiv">
                     <div id="leftDiv">
                         <label for="fname" id="fname">First Name</label>
-                        <input type="text" placeholder="Enter first name" name="fname" size="65" id="fname" >
+                        <input type="text" placeholder="Enter first name" name="fname" size="65" id="fname">
                     </div>
                     <div id="rightDiv">
                         <label for="lname">Last Name</label>
-                        <input type="text" placeholder="Enter last name" name="lname" id="lname" >
+                        <input type="text" placeholder="Enter last name" name="lname" id="lname">
                     </div>
                 </div>
                 <div id="parentDiv2">
                     <div id="leftDiv2">
                         <label for="email">Email</label>
-                        <input type="text" placeholder="Enter email" name="email" id="email" >
+                        <input type="text" placeholder="Enter email" name="email" id="email">
                     </div>
                     <div id="rightDiv2">
                         <label for="phone">Phone Number</label>
-                        <input type="text" placeholder="Enter phone number" name="phone"
-                            id="phone">
+                        <input type="text" placeholder="Enter phone number" name="phone" id="phone">
                     </div>
                 </div>
 
                 <div id="parentDiv3">
                     <label for="address">Address</label>
-                    <input type="text" placeholder="Enter address" name="address" id="address" >
+                    <input type="text" placeholder="Enter address" name="address" id="address">
                 </div>
             </div>
 
@@ -276,33 +275,34 @@
             </div>
             <hr>
             <label class="Agree">
-                <input type="checkbox" id="Agree" >I agree to these <a
-                    href="../gallery/terms&conditions.docx">Terms and
+                <input type="checkbox" id="Agree">I agree to these <a href="../gallery/terms&conditions.docx">Terms and
                     Conditions</a>.
                 <span class="check"></span>
             </label>
 
-            <div class="box">
-                <a class="button" href="#popup1" target="_blank">
-                    <button type="submit" class="registerbtn" href="#popup1">Register</button></a>
-            </div>
-            <div id="myModal" class="modal">
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <p id="modal-message"></p>
-                  <button id="modal-confirm">OK</button>
-                </div>
-              </div>
-
-            <div id="popup1" class="overlay">
-                <div class="popup">
-                    <a class="close" href="#"></a>
-                    <div class="content">
-                        Your form has been successfully submitted!
-                    </div>
-                </div>
-            </div>
         </form>
+        <div class="box">
+            <a class="button">
+                <button type="submit" class="registerbtn" onclick="validateform()">Register</button></a>
+        </div>
+
+
+        <!-- Custom confirm box HTML -->
+        <div class="confirm-box">
+            <h2>Confirm your Registration</h2>
+            <p id="a"></p>
+            <p id="b"></p>
+            <p id="c"></p>
+            <p id="d"></p>
+            <p id="e"></p>
+            <p id="f"></p>
+            <p id="g"></p>
+            <p id="h"></p>
+            <p id="i"></p>
+
+            <button id="ok" onclick="performAction()">OK</button>
+            <button id="cancel" onclick="hideConfirmBox()">Cancel</button>
+        </div>
     </div>
 </body>
 <br>

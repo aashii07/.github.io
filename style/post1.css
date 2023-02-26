@@ -296,11 +296,13 @@ footer p {
     flex-direction: column;
   }
 
-  .fb,.p {
+  .fb,
+  .p {
     width: 100%;
   }
 
-  .fb,.text {
+  .fb,
+  .text {
     width: 100%;
   }
 }
@@ -311,11 +313,11 @@ footer p {
 body {
   background-color: black;
   color: rgb(255, 255, 255);
-  
+
 }
 
 .second-background {
   background-image: url('../gallery/theme.jpg');
   color: #000000;
- 
+
 }

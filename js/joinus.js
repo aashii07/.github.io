@@ -1,4 +1,7 @@
 function validateform() {
+
+    //localStorage.clear();
+
     var fname = document.myform.fname.value;
     var lname = document.myform.lname.value;
     var emailID = document.myform.email.value;
@@ -77,11 +80,42 @@ function validateform() {
     if (checkbox4.checked) {
         selectedCheckboxes.push(checkbox4.value);
     }
-
     // Convert the array to a JSON string
     const selectedCheckboxesJSON = JSON.stringify(selectedCheckboxes);
     // Store the JSON string in local storage
     localStorage.setItem("selectedCheckboxes", selectedCheckboxesJSON);
+
+
+
+
+    const confirmBox = document.querySelector(".confirm-box");
+    document.getElementById("a").innerHTML = "First Name: " + fname;
+    document.getElementById("b").innerHTML = "Last Name: " + lname;
+    document.getElementById("c").innerHTML = "Email: " + emailID;
+    document.getElementById("d").innerHTML = "Phone Number: " + phone;
+    document.getElementById("e").innerHTML = "Address: " + address;
+    document.getElementById("f").innerHTML = "Birth Date: " + day + "/" + month + "/" + year;
+    document.getElementById("g").innerHTML = "Gender: " + gender;
+    document.getElementById("h").innerHTML = "Where you heard about us: " + selectedCheckboxes;
+    document.getElementById("i").innerHTML = "Message: " + message;
+    confirmBox.style.display = "block";
+
+
+}
+
+
+
+function hideConfirmBox() {
+    // Hide the custom confirm box
+    const confirmBox = document.querySelector(".confirm-box");
+    confirmBox.style.display = "none";
+}
+
+function performAction() {
+
+    var fname = document.myform.fname.value;
+    var lname = document.myform.lname.value;
+    // Perform the action
     // Create an object to store the form values
     let formValues = { fname: fname, lname: lname };
     // Get the existing past form values from local storage, or create an empty array
@@ -91,60 +125,10 @@ function validateform() {
     // Save the updated array of past form values to local storage
     localStorage.setItem("pastFormValues", JSON.stringify(pastFormValues));
 
-    // Construct the message to display in the popup
-    var popupMessage = "First Name: " + fname + "\n" +
-        "Last Name: " + lname + "\n" +
-        "Email: " + emailID + "\n" +
-        "Phone: " + phone + "\n" +
-        "Address: " + address + "\n" +
-        "Birth Date: " + day + "/" + month + "/" + year + "\n" +
-        "Gender: " + gender + "\n" +
-        "Where you heard about us: " + selectedCheckboxes + "\n" +
-        "Message: " + message + "\n";
+    alert("Your form has been successfully submitted!");
 
-    // Display the message in a popup
-    /*var confirmed = confirm(popupMessage);
-
-    // If the user confirmed, submit the form
-    if (confirmed) {
-        document.myform.submit();
-    }*/
-
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the <span> element that closes the modal
-    var closeBtn = document.getElementsByClassName("close")[0];
-
-    // Get the message and confirm button elements
-    var modalMessage = document.getElementById("modal-message");
-    var modalConfirm = document.getElementById("modal-confirm");
-
-
-    // Set the message in the modal dialog
-    modalMessage.innerHTML = popupMessage;
-
-    // Display the modal
-    modal.style.display = "block";
-
-    // When the user clicks on <span> (x), close the modal
-    /*closeBtn.onclick = function () {
-        modal.style.display = "none";
-    };*/
-
-    // When the user clicks anywhere outside of the modal, close it
-    /*window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    };*/
-
-    // When the user clicks the confirm button, submit the form
-    modalConfirm.onclick = function () {
-        modal.style.display = "none";
-        document.myform.submit();
-    };
-
+    // Hide the custom confirm box
+    hideConfirmBox();
 }
 
 function validateFirstname(fname) {
@@ -191,5 +175,4 @@ function validatePhone(phone) {
     }
     return (true);
 }
-
 

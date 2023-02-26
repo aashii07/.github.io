@@ -244,7 +244,7 @@ a.b:active {
 }
 
 .event {
- 
+
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -263,11 +263,11 @@ a.b:active {
 body {
   background-color: black;
   color: rgb(255, 255, 255);
-  
+
 }
 
 .second-background {
   background-image: url('../gallery/theme.jpg');
   color: #000000;
- 
+
 }

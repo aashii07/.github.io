@@ -153,14 +153,30 @@ h1 {
     flex: 50%;
     max-width: 50%;
   }
+
+  .row {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .row {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -297,7 +313,7 @@ footer p {
 }
 
 .event {
-  
+
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -317,11 +333,11 @@ footer p {
 .flip-box {
   background-color: transparent;
   width: 100%;
- 
-  border:#00000000;
+
+  border: #00000000;
   perspective: 1000px;
   margin-bottom: 71%;
-  
+
 }
 
 .flip-box-inner {
@@ -335,7 +351,8 @@ footer p {
   transform: rotateX(180deg);
 }
 
-.flip-box-front, .flip-box-back {
+.flip-box-front,
+.flip-box-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -352,13 +369,13 @@ footer p {
   background-color: transparent;
   width: 100%;
   height: 0;
-  border:#00000000;
+  border: #00000000;
   perspective: 1000px;
   margin-bottom: 140%;
 }
 
 .flip-box-inner1 {
- 
+
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
@@ -367,7 +384,8 @@ footer p {
   transform: rotateY(180deg);
 }
 
-.flip-box-front1, .flip-box-back1 {
+.flip-box-front1,
+.flip-box-back1 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -378,15 +396,17 @@ footer p {
 
 
 .flip-box-back1 {
- 
+
   transform: rotateY(180deg);
 }
 
 
 
-.row{box-sizing: border-box;}
+.row {
+  box-sizing: border-box;
+}
 
-.img-comp-container{
+.img-comp-container {
   position: relative;
   width: 100%;
 }
@@ -406,15 +426,15 @@ footer p {
 
 
 .img-comp-img img {
-  display:block !important;
+  display: block !important;
   width: 400px;
   height: 265px;
- 
+
 }
 
 .img-comp-slider {
   position: absolute;
-  z-index:9;
+  z-index: 9;
   cursor: ew-resize;
   /*set the appearance of the slider:*/
   width: 40px;
@@ -427,11 +447,11 @@ footer p {
 body {
   background-color: black;
   color: rgb(255, 255, 255);
-  
+
 }
 
 .second-background {
   background-image: url('../gallery/theme.jpg');
   color: #000000;
- 
+
 }

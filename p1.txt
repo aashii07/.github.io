@@ -1,24 +1,3 @@
-responsive - about us video
-
-customise button in home page for theme
-
-When user clicks submit and all information are valid, a confirm box
-will show all information entered by user and the user must confirm
-his information by clicking OK button.
-
-local storage 
-
-about us names local storage
-
-
-
-
-
-
-
-
-
-
 
 https://www.101photoclub.com/
 https://myphotoclub.co.uk/

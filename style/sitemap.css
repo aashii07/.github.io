@@ -116,7 +116,13 @@ h2 {
   margin: 0%;
 }
 
+h2 a {
+  all: unset;
+}
+
+
 h3 {
+
   text-align: left;
   padding-left: 30%;
 }
@@ -293,7 +299,7 @@ footer p {
 }
 
 .event {
-  
+
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -312,11 +318,11 @@ footer p {
 body {
   background-color: black;
   color: rgb(255, 255, 255);
-  
+
 }
 
 .second-background {
   background-image: url('../gallery/theme.jpg');
   color: #000000;
- 
+
 }

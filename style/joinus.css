@@ -106,12 +106,12 @@ ul.breadcrumb li a:hover {
 /* Add padding to containers */
 .container {
   padding: 16px;
-  background-color: black;
+
 }
 
 
 h1 {
-  color: rgb(255, 255, 255);
+
   margin-left: 80px;
 }
 
@@ -134,7 +134,7 @@ input[type=text]:focus {
 
 /* Overwrite default styles of hr */
 hr {
-  border: 1px solid #f1f1f1;
+  border: 1px solid;
   margin-bottom: 50px;
   margin-top: 25px;
   margin-left: 80px;
@@ -166,12 +166,12 @@ a {
   color: dodgerblue;
 }
 
-p container {
+p .container {
   color: inherit;
 }
 
 .container label {
-  color: white;
+
   font-size: 18px;
 
 }
@@ -222,6 +222,7 @@ p container {
   padding-top: 1px;
   display: table-cell;
   width: 25%;
+
 }
 
 #parentDiv3 {
@@ -234,9 +235,7 @@ p container {
   width: 10%;
 }
 
-p {
-  color: white;
-}
+
 
 .title p {
   color: white;
@@ -247,20 +246,27 @@ p {
   width: 1300px;
   margin-left: 80px;
   margin-top: 15px;
+
 }
 
 @media (max-width: 1450px) {
 
   .title p {
-    width: 100%;
+    width: 98%;
     margin-left: 0px;
   }
 
   .message p {
-    width: 100% !important;
+    width: 98% !important;
     margin-left: 0px !important;
   }
+
+  #rightDiv2 {
+    padding-left: 10px;
+
+  }
 }
+
 
 #leftDiv4 {
   padding: 38px;
@@ -373,7 +379,7 @@ select {
 }
 
 .CheckBox {
-  color: white;
+
   padding-right: 35px;
 }
 
@@ -515,7 +521,7 @@ footer p {
 }
 
 .event {
-  
+
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -539,87 +545,24 @@ footer p {
   transition: all 0.3s ease-out;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  width: 100%;
-  height: auto;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-.popup .content {
-  overflow: auto;
-  font-size: 60px;
-  text-align: center;
-  margin-top: 20%;
-}
-
-#popup1 {
-  width: 100%;
-  height: 100%;
-  position: center;
-  background-image: url("../gallery/camera.jpg");
-  background-size: cover;
-}
-
-.content img {
-  width: 10%;
-  height: 20%;
-}
-
-.content {
-  background: -webkit-linear-gradient(black 30%, grey 80%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 1px black, 0 0 5px rgb(76, 225, 255);
-}
-
 body {
   background-color: black;
   color: rgb(255, 255, 255);
-  
+
 }
 
 .second-background {
   background-image: url('../gallery/theme.jpg');
   color: #000000;
- 
+
 }
 
-.Agree  {
-  color: white;
+.Agree {
+
   padding-right: 35px;
 }
 
-.Agree  {
+.Agree {
   display: block;
   position: relative;
   padding-left: 120px;
@@ -631,7 +574,7 @@ body {
 }
 
 /* Hide the browser's default checkbox */
-.Agree  input {
+.Agree input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -645,7 +588,7 @@ body {
 }
 
 /* When the checkbox is checked, add a blue background */
-.Agree  input:checked~.check {
+.Agree input:checked~.check {
   background-color: #2195f3;
 }
 
@@ -671,56 +614,55 @@ body {
   content: "✔";
 }
 
-/* The modal dialog */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 9999; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
 
-/* Modal content */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
 
-/* Close button */
-.close {
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
-}
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
 
-/* Confirm button */
-#modal-confirm {
-  display: block;
-  margin: 10px auto 0;
-  padding: 5px 10px;
-  background-color: #4CAF50;
-  color: white;
+button {
+  background-color: #007bff;
   border: none;
   border-radius: 4px;
+  color: #fff;
   cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
 }
 
-#modal-confirm:hover {
-  background-color: #3e8e41;
+
+
+/* Custom confirm box styles */
+.confirm-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+
 }
 
+.confirm-box h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #000000;
+}
+
+.confirm-box p {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.confirm-box button {
+  margin-right: 10px;
+  background-color: #9708df;
+
+}
+
+#ok {
+  margin-left: 50%;
+}

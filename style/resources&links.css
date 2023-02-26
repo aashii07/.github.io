@@ -104,13 +104,10 @@ ul.breadcrumb li a:hover {
   width: 100px;
 }
 
-a.links {
-  color: rgb(130, 0, 110) !important;
-}
+
 
 .rl {
   width: 50px;
-  ;
   height: auto;
   float: left;
   margin-right: 0 px 0 px -300px -300px;
@@ -120,22 +117,28 @@ a.links {
 h3 {
   font-size: 30px;
   text-align: center;
-  color: rgb(255, 255, 255);
+
 }
+
+
 
 
 .flex-container {
   display: flex;
-  background-color: rgba(130, 0, 110, 0.35);
+
 }
 
 .flex-container>div {
-  background-color: #000000;
+
   margin: 2px;
   width: 100%;
   text-align: left;
   font-size: 20px;
   line-height: 70px;
+  border-style: groove;
+  border-width: 5px;
+  background-color: rgba(130, 0, 110, 0.25);
+  border-color: rgb(130, 0, 110);
 
 }
 
@@ -143,6 +146,11 @@ h3 {
   .flex-container {
     flex-direction: column;
     background-color: #00000000;
+  }
+
+  .flex-container>div {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
   }
 }
 
@@ -217,7 +225,7 @@ footer p {
 }
 
 .event {
- 
+
   font-style: italic;
   font-size: 18px;
   float: right;
@@ -236,11 +244,11 @@ footer p {
 body {
   background-color: black;
   color: rgb(255, 255, 255);
-  
+
 }
 
 .second-background {
   background-image: url('../gallery/theme.jpg');
   color: #000000;
- 
+
 }
